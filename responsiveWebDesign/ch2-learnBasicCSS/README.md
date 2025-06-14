@@ -100,3 +100,11 @@ Add a `background-image` property and set its value to `url(the url of an image)
 ### article
 
 `article` elements commonly contain multiple elements that have related information.
+
+### selector
+
+The `p` elements are nested in an `article` element with the `class` attribute of item. You can style all the `p` elements nested anywhere in elements with a `class` named item like this:
+
+    .item p { }
+
+Using the above selector, add a `display` property with value `inline-block` so the p elements behave more like *inline elements*.
