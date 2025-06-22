@@ -108,3 +108,68 @@ The `p` elements are nested in an `article` element with the `class` attribute o
     .item p { }
 
 Using the above selector, add a `display` property with value `inline-block` so the p elements behave more like *inline elements*.
+
+### padding
+
+You can give your menu some space between the content and the sides with various `padding` properties.
+
+- `padding-left`
+- `padding-right`
+- `padding-top`
+- `padding-bottom`
+
+if 4 sides have the same padding, only use `padding`
+
+### max-width
+
+Add a `max-width` property to the menu class with a value of 500px to prevent it from growing too wide.
+
+### font-family
+
+You can change the `font-family` of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+
+Change all the text in your body, by adding a `font-family` property with the value `sans-serif`. This is a fairly common font that is very readable.
+
+You can add a fallback value for the `font-family` by adding another font name separated by a comma `, `. Fallbacks are used in instances where the initial is not found/available.
+
+Add the fallback font `serif` after the Impact font.
+
+### font-style
+
+Italicize the Est. 2020 by creating an established class selector and giving it a `font-style` property of `italic`.
+
+### font-size
+
+### hr
+
+You can use an `hr` element to display a divider between sections of different content.
+
+The default properties of an `hr` element will make it appear as a thin light grey line. You can change the height of the line by specifying a value for the `height` property.
+
+Notice the grey color along the edges of the line. Those edges are known as borders. Each side of an element can have a different color or they can all be the same.
+
+Make all the edges of the hr element the same color as the background of it using the `border-color` property.
+
+Notice how the thickness of the line looks bigger? The default value of a property named `border-width` is 1px for all edges of `hr` elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+
+Change the `height` property of the hr to 2px, so the total height of it becomes 4px.
+
+### pseudo-selector
+
+You change the properties of a link when the link has actually been visited by using a pseudo-selector that looks like 
+
+    a:visited { 
+      propertyName: propertyValue; 
+    }
+
+You change the properties of a link when the mouse hovers over them by using a pseudo-selector that looks like 
+
+    a:hover { 
+      propertyName: propertyValue; 
+    }
+
+You change the properties of a link when the link is actually being clicked by using a pseudo-selector that looks like 
+
+    a:active { 
+      propertyName: propertyValue; 
+    }

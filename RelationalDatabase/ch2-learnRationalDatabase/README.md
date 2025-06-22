@@ -28,8 +28,6 @@ The capitalized words are keywords telling PostgreSQL what to do. The name of th
 
 ### drop DATABASE
 
-The databases you see are there by default. You can make your own like this:
-
     DROP DATABASE database_name;
 
 ### connect database
@@ -194,7 +192,8 @@ here's your foreign key at the bottom. These tables have a "one-to-one" relation
 
 The column should also be NOT NULL since you don't want to have a row that is for nobody. Here's an example:
 
-ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
+    ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
+
 Add the NOT NULL constraint to your foreign key column.
 
 ### view via condition
@@ -207,7 +206,7 @@ A condition you used before was username='Samus'. Find Toad's id by viewing the 
 
 ---
 
-###
+### Create table with col
 
 Next, you will make a sounds table that holds filenames of sounds the characters make. You created your other tables similar to this:
 
@@ -219,7 +218,7 @@ Inside those parenthesis you can put columns for a table so you don't need to ad
 
 Create a new table named sounds. Give it a column named sound_id of type SERIAL and a constraint of PRIMARY KEY.
 
-###
+### one-to-many
 
 You want to use character_id as a foreign key again. This will be a "one-to-many" relationship because one character will have many sounds, but no sound will have more than one character. Here's the example again:
 
@@ -227,7 +226,7 @@ You want to use character_id as a foreign key again. This will be a "one-to-many
 
 Add a column to sounds named character_id. Give it the properties INT, NOT NULL, and set it as a foreign key that references character_id from characters.
 
-###
+### set an existing col as foreign key
 
 The foreign keys you set before were added when you created the column. You can set an existing column as a foreign key like this:
 
@@ -235,7 +234,7 @@ The foreign keys you set before were added when you created the column. You can 
 
 Set the character_id column you just added as a foreign key that references the character_id from the characters table.
 
-###
+### composite primary key
 
 Every table should have a primary key. Your previous tables had a single column as a primary key. This one will be different. You can create a primary key from two columns, known as a composite primary key. Here's an example:
 
@@ -243,7 +242,7 @@ Every table should have a primary key. Your previous tables had a single column 
 
 Use character_id and action_id to create a composite primary key for this table.
 
-###
+### JOIN two tables
 
 You can see the character_id there so you just need to find the matching id in the characters table to find out who it's for. Or... You added that as a foreign key, that means you can get all the data from both tables with a JOIN command:
 

@@ -3,3 +3,112 @@
 I am a student in [freeCodeCamp](https://www.freecodecamp.org/). This repo is used to note my learning progress.
 
 If you like programing, I think you can learn a lot from [freeCodeCamp](https://www.freecodecamp.org/).
+
+## Some 
+
+- "It's time to duel!" 是时候决斗了！
+- "Code long and prosper." 编码不息，发展不息
+- "Inconceivable!" 难以置信！
+- "Bodacious!" “了不起的！”“极棒的！” 或 “大胆的！”
+- "Bring that rain!" “让暴风雨来得更猛烈些吧！”
+- "Shiver me timbers!" “我的天呐！” 或 “真让人震惊！”
+- "Challenge destroyed!" “挑战已被击破！” 或 “挑战被粉碎了！”
+- "Power level? It's over 9000!" “战斗力？超过 9000 了！”
+- "You better believe it!" “你最好相信！” 或 “绝对没错！”
+- "You can do this all day!" “你可以跟我耗一整天！” 或 “你能跟我扛到底！”
+- "You rock!" 你太棒了！ 或 你真厉害！
+- "You've got guts!" “你真有胆量！” 或 “你够有种！”
+- "You're outta sight!" “你太出色了！” 或 “你简直绝了！”
+- "You're crushing it!" “你太棒了！” 或 “你干得超棒！”
+- "One loop to rule them all!" “一循环统御万物！”
+- "Passed with flying colors!" “以优异成绩通过！” 或 “大获全胜！”
+- "Elementary, my dear Watson!" “这很简单，我亲爱的华生！”
+- "Somebody stop me!" “谁来阻止我！” 或 “快拦住我！”
+- "Off the charts!" “超出上限！” 或 “好到爆表！”
+- "Far out!" “太酷了！” 或 “难以置信！”
+- "Storm that castle!" “突袭那座城堡！” 或 “猛攻那座城堡！”
+- "Kool Aid Man says oh yeah!" “酷爱饮料人（Kool Aid Man）喊着‘哦耶！’”
+- "Most efficient!" “最高效的！”
+- "Way to go!" 做得好！ 或 好样的！
+- "Inconceivable!" 不可思议！ 或 难以置信！
+- "Keep on trucking!" 继续前进！ 或 坚持下去！
+- "This is the way!" 这就是方法！ 或 就该这么做！
+- "Off the charts!" 好得离谱！ 或 超出预期！
+- "Off the hook!" 摆脱困境！ 或 解脱了！
+- "We have liftoff!" 我们起飞了！ 或 发射成功！
+- "Groovy!" 太酷了！ 或 时髦的！
+- "Hyper Combo Finish!" 超必杀连击终结！
+- "Standing ovation!" 起立鼓掌！ 或 全场起立欢呼
+- "You're heating up!" 你越来越厉害了！ 或 你状态越来越好了！
+- "What sorcery is this?" 这是什么魔法？ 或 这是什么妖术？
+- "There is no spoon!" 根本没有汤匙！ 或 汤匙并不存在！
+- "Bullseye!" 正中靶心！ 或 靶心！
+- "Hasta la vista, challenge!" “再见，挑战！”
+- "King of the Pirates!" “海盗之王！”
+- "It's on like Donkey Kong!" “好戏开场了！” 或 “大战一触即发！”
+- "Helm, Warp Nine. Engage!" “舵手，曲速九档。启动！”
+- "Get to the choppa!" “上直升机！”
+- 
+
+## words
+
+- modify v.修改；变更；改进
+- alpha-numeric adj.字母数字的；字母数字混合的
+- underscore n.下划线`_`
+- cipher n.密码；暗号
+- colon n.冒号`:`
+- parentheses n.`()`
+- exclamation n.`!`
+- backslash n.`\`
+- indent v.缩进；缩排
+- iteration n.迭代；重复；循环
+- comma n.逗号`,`
+- arguement n.参数
+- immutable adj.不可变的；永恒不变的
+- encrypted adj.加密的；被加密的
+- clause n.条款；从句
+- subsequent adj.随后的；后来的；继… 之后的
+- modulo n.模；模运算；模除 `%` in Python
+- quotient n.商；商数
+- remainder n.余数
+- incorporate v.合并；包含；使并入；组成公司
+- operand n.操作数
+- scope n.范围；领域；眼界；作用域
+- equation n.方程
+- minus prep.&n.&adj.减去；减
+- factorable adj.可因式分解的
+- parameter n.参数
+- versatility n.多才多艺；多功能性；用途广泛
+- customization n.定制；定制化；个性化定制
+- identical adj.完全相同的；一模一样的；同一的
+- tweak n.微调；小调整；细微修改
+- negate v.否定；使无效；取消；抵消
+- concatenate v.连接；串联；拼接
+- interpolate v.插值；内插；推断；篡改
+- exponent n.指数；倡导者；代表者
+- aesthetic adj.&n.美学的；审美的；有审美观点的；（与）美感（有关）的
+- cyan n.青色；蓝绿色
+- shorthand n.速记；速记法；简略的表达方式
+- additive adj.添加剂；添加的；加法的
+- magenta n.品红色；洋红色
+- tertiary adj.第三级的；第三阶段的
+- violet n.紫罗兰色；紫罗蓝色
+- chartreuse n.查特酒色；黄绿色
+- azure n.天蓝色；蔚蓝色
+- hues n.色调；色彩；色度
+- complementary adj.互补的；互补性的
+- accent n.强调；重点,口音；腔调
+- popup n.弹窗（计算机术语）,突然出现的事物
+- hexadecimal n.十六进制
+- saturation n.饱和度
+- gradient n.梯度
+- sleeves n.袖子
+- opacity n.不透明度
+- opaque adj.不透明的
+- slope n.斜率
+- linear adj.线性的
+- intercept n.截距
+- equation n.方程
+- blurring adj.模糊
+- subplot n.子图
+- legend n.图例
