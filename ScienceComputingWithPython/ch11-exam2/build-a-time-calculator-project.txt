@@ -1,0 +1,64 @@
+** start of main.py **
+
+def add_time(start, duration, weekday=None):
+    "Time Calc"
+
+    weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    if weekday:
+        # Get the index of the weekday
+        week_index = weekdays.index(weekday.lower())
+    
+    # duration
+    duration_list = [int(i) for i in duration.split(':')]
+    duration_m = duration_list[0]*60 + duration_list[1]
+
+    # AM
+    if start.endswith('AM'):
+        start_list = start.rstrip(' AM').split(':')
+        start_list = [int(i) for i in start_list]
+        start_m = start_list[0]*60 + start_list[1]
+
+    # PM
+    if start.endswith('PM'):
+        start_list = start.rstrip(' PM').split(':')
+        start_list = [int(i) for i in start_list]
+        start_m = (12 + start_list[0])*60 + start_list[1]
+
+    total = start_m + duration_m
+
+    d = total // (24*60)
+    h = (total - d *24 * 60) // 60
+    m = '%02d' % (total % 60)
+    # print(d, h, m)
+    if d == 0:
+        d_info = ''
+    elif d == 1:
+        d_info = ' (next day)'
+    elif d > 1:
+        d_info = f' ({d} days later)'
+
+    if h == 0:
+        h += 12
+        suffix = 'AM'
+    elif h < 12:
+        suffix = 'AM'
+    elif h == 12:
+        suffix = 'PM'
+    elif h > 12:
+        suffix = 'PM'
+        h = h - 12
+    time_info = f'{h}:{m} {suffix} '.strip()
+    # print(time_info, d_info)
+    
+
+    if weekday:
+        week_index = (week_index + d) % 7
+        week_info = weekdays[week_index].title()
+
+        new_time = time_info.strip() + ', ' + week_info + d_info
+    else:
+        new_time = time_info + d_info
+    return new_time
+
+** end of main.py **
+
