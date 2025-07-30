@@ -149,3 +149,4 @@ If you like programing, I think you can learn a lot from [freeCodeCamp](https://
 - interpolate v.插值；插入；篡改
 - prepend v.前置；在…… 前添加；把…… 放在前面
 - spam n.垃圾邮件 / 信息
+- implicitly adv.暗中；暗含；含蓄地
