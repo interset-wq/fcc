@@ -1,27 +1,17 @@
-# Learn String Manipulation by Building a Cipher
-
-## Abatract
+# Learn String Manipulation by Building a Cipher通过创建密码学习字符串操作
 
 Python is a powerful and popular programming language widely used for data science, data visualization, web development, game development, machine learning and more.
 
 In this project, you'll learn fundamental programming concepts in Python, such as variables, functions, loops, and conditional statements. You'll use these to code your first programs.
 
-## Some words
-
-- argument 参数
-- brackets 方括号
-- bracket notation 括号表示法
-
-## Note
+## slice切片
 
 ### index
 
 use `[index]` to acquire a char in the string, just like a list
 
-### data type
-
-- `<class 'str'>`
-- `<class 'int'>`
+my_str = "hello world"
+print(my_str[0]) # h
 
 ### method
 
