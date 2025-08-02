@@ -180,3 +180,76 @@ The table should start with a newline character and end with a newline character
 Now it's time for the graph. Create a method create_trajectory and replace the last print call at the bottom of your code with print(graph.create_trajectory()).
 
 As the first step of this new method, make a local copy of the coordinates but where all the values are rounded to integers. Save this new version of the coordinates in a variable named rounded_coords, and return this variable.
+
+Now that you have the rounded coordinates, find the maximum value between all the x coordinates and the maximum value between all the y coordinates.
+
+These max values will be the number of rows and columns in the graph. Save the first in a new variable named x_max and the second in a variable named y_max.
+
+Return x_max, y_max.
+
+Now that you have x_max and y_max you can use these as number of rows and columns to start building the graph structure: create a list of lists where the external list contains y_max +1 lists, each with inside x_max +1 elements, where each element is a string containing a single space.
+
+Save this list of lists in a variable named matrix_list and return this value.
+
+matrix_list should look like this:
+
+Example Code
+[
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+]
+
+The output is becoming quite difficult to read, so you should replace the print(graph.create_trajectory()) with a loop that prints each row separately.
+
+matrix_list is a list of lists, each element has an (x, y) coordinate. Use the list of coordinates in rounded_coords to change the elements in matrix_list at the coordinates in the list to the symbol in the PROJECTILE variable. Remember that a coordinates graph has the (0, 0) in the bottom left corner.
+
+Example Code
+[
+    [" ", " ", " ", " ", " ", "∙", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", "∙", "∙", "∙", " ", "∙", "∙", "∙", " ", " ", " ", " "],
+    [" ", "∙", " ", " ", " ", " ", " ", " ", " ", "∙", " ", " ", " "],
+    ["∙", " ", " ", " ", " ", " ", " ", " ", " ", " ", "∙", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "∙", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", "∙"],
+    [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "],
+]
+
+You have a list of lists of strings. Join the inner lists to have a list of strings.
+
+It should look like this:
+
+Example Code
+[
+    "     ∙       ",
+    "  ∙∙∙ ∙∙∙    ",
+    " ∙       ∙   ",
+    "∙         ∙  ",
+    "           ∙ ",
+    "            ∙",
+    "             ",
+]
+
+Finally, make the final output a multiline string. It should start with a newline character and end with a newline character.
+
+Example Code
+
+⊣     ∙       
+⊣  ∙∙∙ ∙∙∙    
+⊣ ∙       ∙   
+⊣∙         ∙  
+⊣           ∙ 
+⊣            ∙
+⊣             
+ TTTTTTTTTTTTT
+
+
+You have built a projectile trajectory calculator.
+
+Now to conclude, modify the code you wrote outside the classes, and incorporate it into a little utility function called projectile_helper that takes in the desired values for speed, height and angle and prints to the terminal in sequence, the details of the projectile, the table of coordinates and the graph of the trajectory.
+
+Call projectile_helper once with values of your choice.

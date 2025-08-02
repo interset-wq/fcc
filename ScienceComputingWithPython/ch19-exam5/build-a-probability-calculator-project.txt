@@ -1,0 +1,56 @@
+** start of main.py **
+
+import copy
+import random
+
+class Hat:
+    def __init__(self, **kwargs):
+        self.contents  = []
+        for k, v in kwargs.items():
+            for i in range(v):
+                self.contents.append(k)
+
+    def draw(self, num):
+        """随机抽球"""
+        remove_balls = []
+        if num >= len(self.contents):
+            remove_balls = self.contents
+            self.contents = []
+        else:
+            for _ in range(num):
+                random_ball = random.choice(self.contents)
+                self.contents.remove(random_ball)
+                remove_balls.append(random_ball)
+        return remove_balls
+
+
+def experiment(hat, 
+               expected_balls: dict, 
+               num_balls_drawn: int, 
+               num_experiments: int):
+    num = 0
+    for _ in range(num_experiments):
+        new_hat = copy.deepcopy(hat)
+        result: list = new_hat.draw(num_balls_drawn)
+        if all(result.count(k) >= v for k, v in expected_balls.items()): 
+            num += 1
+                
+    return num / num_experiments
+
+
+hat = Hat(black=6, red=4, green=3)
+probability = experiment(hat=hat,
+                expected_balls={'red':2,'green':1},
+                num_balls_drawn=5,
+                num_experiments=2000)
+
+print(probability)
+# 0.356
+
+# hat.draw(10)
+# new = copy.deepcopy(hat)
+# print(hat.draw(10))
+# print(new.draw(10))
+
+** end of main.py **
+
