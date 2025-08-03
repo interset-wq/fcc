@@ -1,4 +1,4 @@
-# Learn the Bisection Method by Finding the Square Root of a Number
+# Learn the Bisection Method by Finding the Square Root of a Number通过求一个数的平方根学习二分法
 
 Numerical methods are used to approximate solutions to mathematical problems that are difficult or impossible to solve analytically.
 

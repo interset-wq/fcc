@@ -1,4 +1,4 @@
-# Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm
+# Learn How to Work with Numbers and Strings by Implementing the Luhn Algorithm通过卢恩算法学习数字和字符串
 
 The Luhn Algorithm is widely used for error-checking in various applications, such as verifying credit card numbers.
 
@@ -23,7 +23,7 @@ Sum 2-char digits   7   9  9  4  7  6  9   7  7  2  x
 
 ### .maketrans
 
-Python comes with built-in classes that can help us with string manipulation. One of them is the str class. It has a method called maketrans that can help us create a translation table. This table can be used to replace characters in a string:
+Python comes with built-in classes that can help us with string manipulation. One of them is the `str` class. It has a method called `maketrans` that can help us create a translation table. This table can be used to replace characters in a string:
 
     str.maketrans({'t': 'c', 'l': 'b'})
 

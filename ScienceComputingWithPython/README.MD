@@ -4,3 +4,5 @@ The Scientific Computing with Python curriculum will equip you with the skills t
 
 This comprehensive course will guide you through the fundamentals of scientific computing, including data structures, and algorithms.
 
+
+

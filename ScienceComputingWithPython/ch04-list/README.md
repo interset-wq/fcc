@@ -1,4 +1,4 @@
-# Learn Python List Comprehension by Building a Case Converter Program
+# Learn Python List Comprehension by Building a Case Converter Program通过创建大小写转换程序学习列表推导式
 
 List Comprehension is a way to construct a new Python list from an iterable types: lists, tuples, and strings. All without using a for loop or the `.append()` list method.
 

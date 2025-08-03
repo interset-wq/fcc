@@ -25,7 +25,7 @@ In the example above, item1 would have the value 'lemon' and item2 would have th
 
 ## walrus operator海象运算符
 
-The `:=` operator gives you the ability to assign variables in the middle of an expression. The syntax is: name := val, where name is the variable name and val is the variable value.
+The `:=` operator gives you the ability to assign variables in the middle of an expression. The syntax is: `name := val`, where name is the variable name and val is the variable value.
 
 This construct is formally named assignment expressions, while the `:=` operator is commonly referred to as the walrus operator.
 

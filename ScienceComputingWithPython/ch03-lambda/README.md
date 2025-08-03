@@ -1,4 +1,4 @@
-# Learn Lambda Functions by Building an Expense Tracker
+# Learn Lambda Functions by Building an Expense Tracker通过开支计算器学习lambda表达式
 
 Lambda functions give you a concise way to write small, throwaway functions in your code.
 

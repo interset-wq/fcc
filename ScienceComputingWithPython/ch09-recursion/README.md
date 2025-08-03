@@ -1,4 +1,4 @@
-# Learn Recursion by Solving the Tower of Hanoi Puzzle汉诺塔问题
+# Learn Recursion by Solving the Tower of Hanoi Puzzle通过解决汉诺塔问题学习递归
 
 Recursion is a programming approach that allows you to solve complicated computational problems with just a little code.
 
