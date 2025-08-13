@@ -1,0 +1,42 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Agency Page</title>
+        <meta name="description" content="Travel to China is worthy.">
+    </head>
+    <body>
+        <h1>Go to China,enjoy your vocation!</h1>
+        <p>Art,culture,scenery,nature,food,and more.We will give you a good guide to enjoy your vocation in China.</p>
+        <h2>Packages</h2>
+        <p>Weather the most famous cities or less-famous cities,we will provide you with the most profession advice.We will try our best to let you have a good time in China.</p>
+        <ul>
+            <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+            <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+        </ul>
+        <h2>Top Itineraries</h2>
+        <figure>
+            <a target="_blank" href="https://www.freecodecamp.org/learn">
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="colosseo">
+            </a>
+            <figcaption>Visit famous places.</figcaption>
+        </figure>
+        <figure>
+            <a target="_blank" href="https://www.freecodecamp.org/learn">
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="alps">
+            </a>
+            <figcaption>Climb Mountains.</figcaption>
+        </figure>
+        <figure>
+            <a target="_blank" href="https://www.freecodecamp.org/learn">
+                <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="sea">
+            </a>
+            <figcaption>Watch sea.</figcaption>
+        </figure>
+    </body>
+</html>
+
+** end of index.html **
+

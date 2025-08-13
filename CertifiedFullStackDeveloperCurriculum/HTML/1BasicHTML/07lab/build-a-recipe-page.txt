@@ -1,0 +1,35 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chinese Breakfast</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Breakfast Recipt</h1>
+        <p>Welcome to China.We always eat healthy and simple breakfast in morning.Follow the recipt to make your own breakfast.</p>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="recipt">
+        <section>
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 or more eggs</li>
+                <li>1 cup milk or soy milk</li>
+                <li>1 bowl congee</li>
+                <li>1 or 2 youtiao</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Instructions</h2>
+            <ol>
+                <li>Get up.</li>
+                <li>Go to the nearest breakfast house.</li>
+                <li>Buy the Ingredients above.</li>
+                <li>Eat here or back home.</li>
+            </ol>
+        </section>
+    </body>
+</html>
+
+** end of index.html **
+

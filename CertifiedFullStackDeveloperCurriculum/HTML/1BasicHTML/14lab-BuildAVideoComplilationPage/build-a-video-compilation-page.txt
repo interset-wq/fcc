@@ -1,0 +1,54 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>Learn Python</h1>
+        <p>I am fond of <strong>Python</strong>.In order to learn it will,I watched many videos online.</p>
+        <section>
+            <h2>Syntax</h2>
+            <p>Many videos to teach how to use Python syntzx.</p>
+            <iframe 
+                src="//player.bilibili.com/player.html?isOutside=true&aid=712020469&bvid=BV1wD4y1o7AS&cid=1309468966&p=1"
+                width="500" 
+                height="280"
+                title="syntex"
+                allowfullscreen
+                frameborder="0"></iframe>
+        </section>
+        <section>
+            <h2>More</h2>
+            <p>More videos to learn Python.</p>
+            <iframe 
+                src="//player.bilibili.com/player.html?isOutside=true&aid=941747210&bvid=BV1qW4y1a7fU&cid=1594645068&p=1" 
+                width="500" 
+                height="280"
+                title="more"
+                allowfullscreen
+                frameborder="0"></iframe>
+        </section>
+        <section>
+            <h2>DrissionPage - A Popular Automate Lib</h2>
+            <p>An interesting and useful module.</p>
+            <iframe 
+                src="//player.bilibili.com/player.html?isOutside=true&aid=113156064020681&bvid=BV1RFt3eSEPp&cid=25904481742&p=1"
+                width="500" 
+                height="280"
+                title="DrissionPage"
+                allowfullscreen   
+                frameborder="0"></iframe>
+        </section>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+
