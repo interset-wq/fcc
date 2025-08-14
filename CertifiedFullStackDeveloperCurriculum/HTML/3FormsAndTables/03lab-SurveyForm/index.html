@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">My Blog Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve the quality of my blog and posts.</p>
+    <form action="#" id="survey-form">
+        <label for="name" id="name-label">Name: </label>
+        <input required type="text" name="name" id="name" placeholder="Input your name here">
+        <br>
+        <label for="email" id="email-label">Email: </label>
+        <input required type="email" name="email" id="email" placeholder="Input your email here">
+        <br>
+        <label for="number" id="number-label">Age(Optional): </label>
+        <input type="number" name="age" id="number" min="8" max="108" placeholder="Age">
+        <br>
+        <label for="dropdown">What's your favorite language?</label>
+        <br>
+        <select name="lang" id="dropdown">
+            <option value="py">Python</option>
+            <option value="js">JavaScript</option>
+            <option value="c">C</option>
+        </select>
+        <br>
+        <p>Will you visit my blog and recommend it to your friends?</p>
+        <input checked type="radio" name="recommend" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="recommend" id="no" value="no">
+        <label for="no">No</label>
+        <p>Which language do you use?(You can choose more than one)</p>
+        <input type="checkbox" name="html" id="html" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="css" id="css" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="javascript" id="javascript" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <label for="cmt">Any comments or suggestions?</label><br>
+        <textarea name="comment" id="cmt" cols="30" rows="3" placeholder="Input your suggestions here"></textarea>
+
+        <br>
+        <button type="submit" id="submit">Submit Form</button>
+    </form>
+
+  </body>
+</html>
