@@ -1,0 +1,52 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: skyblue;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.todo-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.todo-list li {
+    background-color: aquamarine; 
+    padding: 0;
+    margin: 10px auto;
+    line-height: 2;
+}
+
+.sub-item-link {
+    text-decoration: none;
+}
+
+.sub-item-link:link {
+    color: blue;
+}
+
+.sub-item-link:visited {
+    color: purple;
+}
+
+.sub-item-link:hover {
+    color: red;
+}
+
+.sub-item-link:active {
+    color: green;
+}
+
+.sub-item-link:focus {
+    outline: 2px solid blue;
+}

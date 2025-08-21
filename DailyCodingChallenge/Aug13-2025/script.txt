@@ -1,0 +1,22 @@
+** start of script.js **
+
+function fibonacciSequence(startSequence, length) {
+    let fibArr = startSequence.slice();
+    if (length === 0) {
+        fibArr = [];
+    } else if (length <= 2) {
+        fibArr = fibArr.slice(0, length);
+    } else {
+        for (let i = 2; i < length; i++) {
+            fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
+        }
+    }
+    return fibArr;
+}
+
+
+console.log(fibonacciSequence([0, 1], 20));
+console.log(fibonacciSequence([21, 32], 1));
+
+** end of script.js **
+

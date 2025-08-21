@@ -1,0 +1,97 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="business-card">
+        <img class="profile-image" src="https://avatars.githubusercontent.com/u/177469339?v=4" alt="avatar">
+        <p class="full-name">Interset Wq</p>
+        <p class="designation">Coding Learner</p>
+        <p class="company">Waiting to work</p>
+        <hr>
+        <p>Email: intersetwq@gmail.com</a></p>
+        <p>Phone: 0123456789</p>
+        <a href="https://github.com/interset-wq">Portfolio</a>
+        <hr>
+        <div class="social-media">
+            <h2>Connect with me</h2>
+            <a target="_blank" href="#">Twitter</a>
+            <a target="_blank" href="#">LinkedIn</a>
+            <a target="_blank" href="https://github.com/interset-wq">GitHub</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.business-card {
+    width: 300px;
+    background-color: skyblue;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+.profile-image {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.full-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.designation {
+    font-size: 20px;
+    color: dimgray;
+}
+
+.company {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-media a {
+    font-style: normal;
+    color: #555;
+    margin: 0 10px;
+}
+
+hr {
+    border: 1px solid #FFF;
+}
+
+
+** end of styles.css **
+

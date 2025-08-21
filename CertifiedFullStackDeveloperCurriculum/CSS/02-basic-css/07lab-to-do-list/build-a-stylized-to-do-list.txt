@@ -1,0 +1,109 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        <ul class="todo-list">
+            <li>
+                <input type="checkbox" name="task1" id="task1">
+                <label for="task1">Get up and have breakfast.</label>
+                <ul class="sub-item">
+                    <li><a href="#" target="_blank" class="sub-item-link">Menu</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="task2" id="task2">
+                <label for="task2">Coding on freeCodeCamp.</label>
+                <ul class="sub-item">
+                    <li><a href="#" target="_blank" class="sub-item-link">freeCodeCamp</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="task3" id="task3">
+                <label for="task3">Cook and have lunch.</label>
+                <ul class="sub-item">
+                    <li><a href="#" target="_blank" class="sub-item-link">Lunch menu</a></li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="task4" id="task4">
+                <label for="task4">Take a nap and listen some music.</label>
+                <ul class="sub-item">
+                    <li><a href="#" target="_blank" class="sub-item-link">Music</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: skyblue;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.todo-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.todo-list li {
+    background-color: aquamarine; 
+    padding: 0;
+    margin: 10px auto;
+    line-height: 2;
+}
+
+.sub-item-link {
+    text-decoration: none;
+}
+
+.sub-item-link:link {
+    color: blue;
+}
+
+.sub-item-link:visited {
+    color: purple;
+}
+
+.sub-item-link:hover {
+    color: red;
+}
+
+.sub-item-link:active {
+    color: green;
+}
+
+.sub-item-link:focus {
+    outline: 2px solid blue;
+}
+
+** end of styles.css **
+

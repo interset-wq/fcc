@@ -1,0 +1,79 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blog-post-card">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="cover" class="post-img">
+        <div class="post-content">
+            <h2 class="post-title">Learn Web Development in 2024</h2>
+            <p class="post-excerpt">Stay ahead of the curve with the latest trends in web development. Discover what's new and exciting in 2024</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 20px;
+}
+
+.blog-post-card {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.post-img {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.post-title {
+    color: #333;
+    margin: 10px;
+}
+
+.post-excerpt {
+    color: #666;
+    margin: 10px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    border: 2px solid black;
+    padding: 4px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100px;
+}
+
+.read-more:hover {
+    background-color: blue;
+}
+
+** end of styles.css **
+

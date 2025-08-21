@@ -1,0 +1,24 @@
+** start of main.py **
+
+def are_anagrams(str1: str, str2: str):
+    str1_dict = {}
+    str2_dict = {}
+    for char1 in str1.lower():
+        if char1.strip():
+            str1_dict[char1] = str1_dict.get(char1, 0) + 1
+    for char2 in str2.lower():
+        if char2.strip():   
+            str2_dict[char2] = str2_dict.get(char2, 0) + 1
+    return str1_dict == str2_dict
+
+
+if __name__ == '__main__':
+    print(are_anagrams("listen", "silent")) # should return true.
+    print(are_anagrams("School master", "The classroom")) # should return true.
+    print(are_anagrams("A gentleman", "Elegant man")) # should return true.
+    print(are_anagrams("Hello", "World")) # should return false.
+    print(are_anagrams("apple", "banana")) # should return false.
+    print(are_anagrams("cat", "dog")) # should return false.
+
+** end of main.py **
+

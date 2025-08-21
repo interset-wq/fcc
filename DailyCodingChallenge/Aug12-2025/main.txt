@@ -1,0 +1,29 @@
+** start of main.py **
+
+def is_valid_number(n: str, base: int) -> bool:
+    """判断某个数字是否有效
+    
+    Args:
+        n (str): 需要判断的数字
+        base (int): 进制，可选值如下：
+
+            - 2 二进制
+            - 8 八进制
+            - 10 十进制
+            - 16 十六进制
+            - 36 三十六进制
+    
+    Returns:
+        bool: 判断是否有效
+    """
+    n_str = n.lower()
+    import string
+    letter = string.digits + string.ascii_lowercase
+    return all((char in letter[: base]) for char in n_str)
+    
+if __name__ == '__main__':
+    print(is_valid_number("10101", 2))
+    print(is_valid_number("10201", 2))
+
+** end of main.py **
+

@@ -1,0 +1,34 @@
+def is_balanced(s: str) -> bool:
+    """判断某个字符串左右两部分元音字母数量是否相同
+
+    Args:
+        s (str): 字符串
+
+    Returns:
+        bool: 是否数量相等
+    """
+    vowel = 'aeiou'
+    s = s.lower()
+    length = len(s)
+    half_length = length // 2
+    left_part = s[:half_length]
+    right_part = s[-half_length:]
+    left_count = 0
+    right_count = 0
+    for left_char in left_part:
+        if left_char in vowel:
+            left_count += 1
+    for right_char in right_part:
+        if right_char in vowel:
+            right_count += 1
+    if left_count == right_count:
+        return True
+    else:
+        return False
+
+
+if __name__ == '__main__':
+    s = 'racecar'
+    s = "Lorem Ipsum"
+    result = is_balanced(s)
+    print(result)

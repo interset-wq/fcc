@@ -1,0 +1,19 @@
+** start of script.js **
+
+function isValidNumber(n, base) {
+    const letter = '0123456789abcdefghijklmnopqrstuvwxyz';
+    let check_letter = letter.slice(0, base)
+    for (const char of n.toLowerCase()) {
+        if (check_letter.includes(char)) {
+            continue;
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isValidNumber("ABC", 16))
+
+** end of script.js **
+

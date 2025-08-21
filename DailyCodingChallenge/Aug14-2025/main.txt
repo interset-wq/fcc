@@ -1,0 +1,23 @@
+** start of main.py **
+
+def space_jam(s: str) -> str:
+    """space jam
+
+    Args: 
+        s (str): 需要被转换的字符串
+
+    Returns:
+        str: 转换后的字符串
+    """
+    parts = s.upper().split()
+    s = ''.join(parts)
+    new_str = ''
+    for char in s:
+        new_str += char + '  '
+    return new_str.strip()
+
+if __name__ == '__main__':
+    print(space_jam("freeCodeCamp"))
+
+** end of main.py **
+

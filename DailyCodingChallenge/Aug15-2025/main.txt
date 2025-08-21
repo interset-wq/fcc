@@ -1,0 +1,24 @@
+** start of main.py **
+
+def jbelmu(text: str) -> str:
+    parts = text.split()
+    for i in range(len(parts)):
+        part = parts[i]
+        if len(part) <= 3:
+            continue
+        chars = list(part)
+        head = chars.pop(0)
+        tail = chars.pop()
+        parts[i] = head + ''.join(sorted(chars)) + tail
+    text = ' '.join(parts)
+    return text
+
+
+if __name__ == '__main__':
+    print(jbelmu("hello world")) # should return "hello wlord".
+    print(jbelmu("i love jumbled text")) # should return "i love jbelmud text".
+    print(jbelmu("freecodecamp is my favorite place to learn to code")) # should return "faccdeeemorp is my faiortve pacle to laern to cdoe".
+    print(jbelmu("the quick brown fox jumps over the lazy dog")) # should return "the qciuk borwn fox jmpus oevr the lazy dog".
+
+** end of main.py **
+

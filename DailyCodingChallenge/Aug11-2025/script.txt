@@ -1,0 +1,32 @@
+** start of script.js **
+
+function isBalanced(s) {
+    let str = s.toLowerCase();
+    const vowel = 'aeiou';
+    let half_length = Math.floor(str.length / 2);
+    let left_part = str.slice(0, half_length);
+    let right_part = str.slice(-half_length);
+    let left_count = 0;
+    let right_count = 0;
+    for (const left_char of left_part) {
+        if (vowel.includes(left_char)) {
+            left_count++;
+        }
+    }
+    for (const right_char of right_part) {
+        if (vowel.includes(right_char)) {
+            right_count++;
+        }
+    }
+    return left_count === right_count ? true : false;
+}
+
+
+let s = 'racecar'
+s = 'Lorem Ipsum'
+s = 'Kitty Ipsum'
+let result = isBalanced(s)
+console.log(result)
+
+** end of script.js **
+
