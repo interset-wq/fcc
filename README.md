@@ -4,55 +4,6 @@
 
 If you like programing, I think you can learn a lot from [freeCodeCamp](https://www.freecodecamp.org/).
 
-## Some 
-
-- "It's time to duel!" 是时候决斗了！
-- "Code long and prosper." 编码不息，发展不息
-- "Inconceivable!" 难以置信！
-- "Bodacious!" “了不起的！”“极棒的！” 或 “大胆的！”
-- "Bring that rain!" “让暴风雨来得更猛烈些吧！”
-- "Shiver me timbers!" “我的天呐！” 或 “真让人震惊！”
-- "Challenge destroyed!" “挑战已被击破！” 或 “挑战被粉碎了！”
-- "Power level? It's over 9000!" “战斗力？超过 9000 了！”
-- "You better believe it!" “你最好相信！” 或 “绝对没错！”
-- "You can do this all day!" “你可以跟我耗一整天！” 或 “你能跟我扛到底！”
-- "You rock!" 你太棒了！ 或 你真厉害！
-- "You've got guts!" “你真有胆量！” 或 “你够有种！”
-- "You're outta sight!" “你太出色了！” 或 “你简直绝了！”
-- "You're crushing it!" “你太棒了！” 或 “你干得超棒！”
-- "One loop to rule them all!" “一循环统御万物！”
-- "Passed with flying colors!" “以优异成绩通过！” 或 “大获全胜！”
-- "Elementary, my dear Watson!" “这很简单，我亲爱的华生！”
-- "Even Honey Badger cares!" “甚至蜜獾都在乎！”
-- "Somebody stop me!" “谁来阻止我！” 或 “快拦住我！”
-- "Off the charts!" “超出上限！” 或 “好到爆表！”
-- "Far out!" “太酷了！” 或 “难以置信！”
-- "Storm that castle!" “突袭那座城堡！” 或 “猛攻那座城堡！”
-- "Kool Aid Man says oh yeah!" “酷爱饮料人（Kool Aid Man）喊着‘哦耶！’”
-- "Most efficient!" “最高效的！”
-- "Way to go!" 做得好！ 或 好样的！
-- "Inconceivable!" 不可思议！ 或 难以置信！
-- "Keep on trucking!" 继续前进！ 或 坚持下去！
-- "This is the way!" 这就是方法！ 或 就该这么做！
-- "Off the charts!" 好得离谱！ 或 超出预期！
-- "Off the hook!" 摆脱困境！ 或 解脱了！
-- "We have liftoff!" 我们起飞了！ 或 发射成功！
-- "Groovy!" 太酷了！ 或 时髦的！
-- "Hyper Combo Finish!" 超必杀连击终结！
-- "Standing ovation!" 起立鼓掌！ 或 全场起立欢呼
-- "You're heating up!" 你越来越厉害了！ 或 你状态越来越好了！
-- "What sorcery is this?" 这是什么魔法？ 或 这是什么妖术？
-- "There is no spoon!" 根本没有汤匙！ 或 汤匙并不存在！
-- "Bullseye!" 正中靶心！ 或 靶心！
-- "Hasta la vista, challenge!" “再见，挑战！”
-- "King of the Pirates!" “海盗之王！”
-- "It's on like Donkey Kong!" “好戏开场了！” 或 “大战一触即发！”
-- "Helm, Warp Nine. Engage!" “舵手，曲速九档。启动！”
-- "Get to the choppa!" “上直升机！”
-- "Spool up the FTL drive!" “启动超光速引擎！”
-- "Everything's coming up Milhouse!" “一切都在向米尔豪斯看齐！”
-- "Flawless victory!" “完胜！” 或 “毫无瑕疵的胜利！”
-
 ## math
 
 - slope n.斜率
