@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: skyblue;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    display: inline-block;
+    width: 10%;
+}
+
+
+input:focus,
+textarea:focus {
+    border: 1px solid black;
+    outline: auto blue;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border: 1px solid green;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border: 1px solid red;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: red;
+    background-color: green;
+    box-shadow: inset 0 0 0 2px red;
+}
+
+input[type="radio"]:checked+label {
+    color: green;
+}
+
+input:first-of-type {
+    border-radius: 5px;
+}

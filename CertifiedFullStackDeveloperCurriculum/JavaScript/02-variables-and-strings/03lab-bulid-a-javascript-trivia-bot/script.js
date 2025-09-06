@@ -1,0 +1,19 @@
+console.log("Hello! I'm your coding fun fact guide!");
+
+const botName = 'IWBot';
+const botLocation = 'China';
+const favoriteLanguage = 'JavaScript';
+
+console.log("My name is " + botName + " and I live on " + botLocation + ".");
+console.log('My favorite programming language is ' + favoriteLanguage + '.');
+
+let codingFact = 'I think ' + favoriteLanguage + ' is interesting!';
+console.log(codingFact);
+
+codingFact = 'Python is as interesting as ' + favoriteLanguage + '.';
+console.log(codingFact);
+
+codingFact = 'I am learning ' + favoriteLanguage + 'on freeCodeCamp.';
+console.log(codingFact);
+
+console.log('It was fun sharing these facts with you. Goodbye! - ' + botName + ' from ' + botLocation + '.');

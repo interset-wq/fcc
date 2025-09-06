@@ -1,0 +1,2 @@
+# Working with Colors in CSS, Not started
+In these lectures, you will learn about linear and radial gradients, the color theory, different kinds of colors like named, RGB, Hex, and HSL colors. You will learn how these colors work, and which to use in specific cases.

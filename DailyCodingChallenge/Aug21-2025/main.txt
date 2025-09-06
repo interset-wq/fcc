@@ -1,0 +1,19 @@
+** start of main.py **
+
+def mile_pace(miles: float, duration: str) -> str:
+    hour, min = [int(i) for i in duration.split(':')]
+    min += hour*60
+    aver = min / miles
+    h = int(aver // 60)
+    m = int(aver % 60)
+    dur = f'{h:02}:{m:02}'
+    return dur
+
+if __name__ == '__main__':
+	print(mile_pace(3, "24:00")) # should return "08:00".
+	print(mile_pace(1, "06:45")) # should return "06:45".
+	print(mile_pace(2, "07:00")) # should return "03:30".
+	print(mile_pace(26.2, "120:35")) # should return "04:36".
+
+** end of main.py **
+
