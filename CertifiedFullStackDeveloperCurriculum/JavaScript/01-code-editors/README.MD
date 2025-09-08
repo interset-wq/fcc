@@ -1,8 +1,9 @@
-# Working with Code Editors and IDEs, Not started
+# Working with Code Editors and IDEs
+
 In these lectures, you will learn how to work with code editors and IDEs. You will learn various concepts about the most popular code editor, VS Code such as its installation, how to create a project in it, keyboard shortcuts, and extensions.
 
 ## What Is a Code Editor and IDE?
-什么是代码编辑器和 IDE？
+
 You might think these are the same thing, but not quite. A code editor is any application that allows you to edit code files. An IDE, or Integrated Development Environment, is a full application that allows you to compile, run, and debug your code while you edit it.
 您可能认为这些是一回事，但不完全是。代码编辑器是允许您编辑代码文件的任何应用程序。IDE（即集成开发环境）是一个完整的应用程序，允许您在编辑代码时编译、运行和调试代码。
 
