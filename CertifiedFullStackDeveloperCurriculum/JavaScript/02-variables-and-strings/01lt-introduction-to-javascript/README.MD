@@ -1,12 +1,15 @@
-## Introduction to JavaScript, Not started
+## Introduction to JavaScript
+
 In these lectures, you will learn the fundamentals of JavaScript. Topics covered include, but are not limited to, variables, data types, how JavaScript interacts with HTML and CSS, strings, and much more.
 
 ## What Is JavaScript, and How Does It Work with HTML and CSS?
-什么是 JavaScript，它如何与 HTML 和 CSS 配合使用？
+
 JavaScript is a powerful programming language that brings interactivity and dynamic behavior to websites.
+
 JavaScript 是一种功能强大的编程语言，可为网站带来交互性和动态行为。
 
 While HTML and CSS are markup languages used to structure content and style elements on a page, JavaScript goes beyond those by enabling more complex functionality, such as handling user input, animating elements, and even building full web applications.
+
 虽然 HTML 和 CSS 是用于构建页面上的内容和样式元素的标记语言，但 JavaScript 通过支持更复杂的功能来超越这些语言，例如处理用户输入、动画元素，甚至构建完整的 Web 应用程序。
 
 For example, when you click a button, submit a form, or hover over a menu, JavaScript determines how the page behaves.
