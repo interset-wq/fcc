@@ -571,22 +571,29 @@ By understanding and using semicolons properly, you can write more reliable and 
 ## What Are Comments in JavaScript, and When Should You Use Them?
 
 Comments in programming are used to provide additional context for the code or leave notes for yourself and others.
+
 编程中的注释用于为代码提供额外的上下文或为自己和他人留下注释。
 
 Comments are lines or blocks of text that are ignored by the JavaScript engine when your code is executed. They are there solely for the benefit of people reading the code, whether that's you or someone else.
+
 注释是执行代码时 JavaScript 引擎忽略的行或文本块。它们的存在只是为了阅读代码的人的利益，无论是你还是其他人。
 
 JavaScript provides two ways to add comments to your code: single-line comments and multi-line comments.
+
 JavaScript 提供了两种向代码添加注释的方法：单行注释和多行注释。
 
 Single-line comments are created using two forward slashes (//). Here is an example:
+
 单行注释是使用两个正斜杠 （） 创建的。这是一个例子：
 
 // I am a single line comment in JavaScript
+
 This type of comment is great for brief explanations or clarifications.
+
 这种类型的评论非常适合简短的解释或澄清。
 
 Here is a real world example from the freeCodeCamp curriculum project files:
+
 以下是 freeCodeCamp 课程项目文件中的一个真实示例：
 
 // This is to allow English to build without having to download the i18n files.
@@ -596,29 +603,38 @@ const I18N_CURRICULUM_DIR = path.resolve(
   __dirname,
   curriculumLocale === 'english' ? '.' : 'i18n-curriculum/curriculum'
 );
+
 Do not worry about trying to understand what the code is actually doing because it is more advanced than what you have learned so far. Instead, focus on the comment left by the developer. This comment provides important context for why this code exists.
+
 不要担心试图理解代码的实际作用，因为它比您迄今为止所学的更高级。相反，请关注开发人员留下的评论。此注释提供了此代码存在原因的重要上下文。
 
 Comments like this are important for those working on teams for two reasons:
+
 像这样的评论对于那些在团队中工作的人来说很重要，原因有两个：
 
 Other developers working on the project will understand the purpose of this code.
+
 从事该项目的其他开发人员将了解此代码的用途。
 
 It helps prevent unnecessary changes or deletions without consulting the team, which could lead to bugs or issues.
+
 它有助于防止在未咨询团队的情况下进行不必要的更改或删除，这可能会导致错误或问题。
 
 Another type of comment is multi-line comments. Here is the basic syntax:
+
 另一种类型的注释是多行注释。这是基本语法：
 
 /*
  I am a multiline comment.
  This is helpful for longer explanations.
 */
+
 Multi-line comments are useful when you need to write longer descriptions, explanations, or notes in your code.
+
 当您需要在代码中编写更长的描述、解释或注释时，多行注释非常有用。
 
 Let's take another look at the freeCodeCamp curriculum project files to see how multiline comments can be used in the real world.
+
 让我们再看看 freeCodeCamp 课程项目文件，看看如何在现实世界中使用多行注释。
 
 /* Since there can be more than one way to complete a certification (using the
@@ -633,30 +649,40 @@ const dupeCertifications = [
 const hasDupe = dupeCertifications.find(
   cert => cert.dupe === meta.superBlock
 );
+
 Just like before, ignore all of the JavaScript code because it uses concepts that haven't been taught yet. Instead, focus on the comment left by the developer.
+
 就像以前一样，忽略所有 JavaScript 代码，因为它使用了尚未教授的概念。相反，请关注开发人员留下的评论。
 
 A developer on the team, or even a new contributor working on the project, can understand why this piece of code is here and have the full context before working on this area of the project.
+
 团队中的开发人员，甚至是从事该项目的新贡献者，都可以理解为什么这段代码会出现在这里，并在处理项目的这一领域之前了解完整的上下文。
 
 While comments are useful in programming, it is important to avoid over-commenting. You don't need to comment on every single line of code, especially if the code is straightforward and self-explanatory.
+
 虽然注释在编程中很有用，但重要的是要避免过度注释。您不需要对每一行代码进行注释，尤其是当代码简单明了且不言自明的情况下。
 
 Here is an example of using comments to explain the obvious:
+
 下面是一个使用注释来解释显而易见的示例：
 
 // This code uses the const keyword to create a new variable called price.
 // We are assigning the number 10 to the price variable.
 const price = 10;
+
 In this situation, there is no need to add any comments here because the code is self-explanatory. The goal is to enhance readability, not clutter the code with unnecessary explanations.
+
 在这种情况下，无需在此处添加任何注释，因为代码是不言自明的。目标是提高可读性，而不是用不必要的解释使代码变得混乱。
 
 If you want to add comments to your personal projects as you are learning to code, that is fine. But once you start working on real world projects with other developers, it is important not to use comments for code that is self-explanatory.
+
 如果您想在学习编码时为您的个人项目添加注释，那很好。但是，一旦您开始与其他开发人员一起处理实际项目，重要的是不要对不言自明的代码使用注释。
 
 It is also important not to use comments to help explain away confusing, overly complicated, or poorly written code. In those situations, it is best to refactor, or change, your code so other developers will better understand what is going on.
+
 同样重要的是，不要使用注释来帮助解释令人困惑、过于复杂或写得不好的代码。在这些情况下，最好重构或更改您的代码，以便其他开发人员更好地了解正在发生的事情。
 
 Comments are powerful tools for documenting your code and making it easier to understand. You should use comments to provide context or leave notes for yourself and others.
+
 注释是记录代码并使其更易于理解的强大工具。您应该使用评论来提供上下文或为自己和他人留下笔记。
 
