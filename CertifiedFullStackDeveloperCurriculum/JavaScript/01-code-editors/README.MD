@@ -5,33 +5,43 @@ In these lectures, you will learn how to work with code editors and IDEs. You wi
 ## What Is a Code Editor and IDE?
 
 You might think these are the same thing, but not quite. A code editor is any application that allows you to edit code files. An IDE, or Integrated Development Environment, is a full application that allows you to compile, run, and debug your code while you edit it.
+
 您可能认为这些是一回事，但不完全是。代码编辑器是允许您编辑代码文件的任何应用程序。IDE（即集成开发环境）是一个完整的应用程序，允许您在编辑代码时编译、运行和调试代码。
 
 Perhaps some examples might be helpful.
+
 也许一些例子可能会有所帮助。
 
 First, let's consider a few popular IDEs. Visual Studio is an integrated development environment by Microsoft that provides a comprehensive suite of tools for building, debugging, and deploying applications across various platforms.
+
 首先，让我们考虑一些流行的 IDE。Visual Studio 是 Microsoft 的集成开发环境，它提供了一套全面的工具，用于跨各种平台构建、调试和部署应用程序。
 
 Another IDE is XCode. Xcode is an integrated development environment by Apple designed for creating, coding, and debugging applications for macOS, iOS, watchOS, and tvOS.
+
 另一个 IDE 是 XCode。Xcode 是 Apple 的集成开发环境，旨在为 macOS、iOS、watchOS 和 tvOS 创建、编码和调试应用程序。
 
 And another IDE would be Android Studio. Android Studio is an integrated development environment by Google specifically designed for building, debugging, and testing Android applications.
+
 另一个 IDE 是 Android Studio。Android Studio 是 Google 专门为构建、调试和测试 Android 应用程序而设计的集成开发环境。
 
 Those are just a few examples of IDEs. Now, let's take a look at a few popular code editors.
+
 这些只是 IDE 的几个示例。现在，让我们来看看一些流行的代码编辑器。
 
 Visual Studio Code is a lightweight, open-source code editor by Microsoft that supports a wide range of programming languages and provides features like debugging, syntax highlighting, and version control through extensions.
+
 Visual Studio Code 是 Microsoft 推出的轻量级开源代码编辑器，支持多种编程语言，并通过扩展提供调试、语法突出显示和版本控制等功能。
 
 Another popular editor would be Sublime Text. Sublime Text is a fast, versatile text editor known for its sleek interface, powerful features, and support for a wide range of programming languages through customizable syntax highlighting and plugins.
+
 另一个流行的编辑器是 Sublime Text。Sublime Text 是一款快速、多功能的文本编辑器，以其时尚的界面、强大的功能以及通过可自定义的语法突出显示和插件对多种编程语言的支持而闻名。
 
 And another one is Notepad++. This is a free, open-source, text and source code editor for Windows that offers syntax highlighting, code folding, and a range of plugins to enhance productivity and customization.
+
 另一个是 Notepad++。这是一个适用于 Windows 的免费开源文本和源代码编辑器，提供语法突出显示、代码折叠和一系列插件以提高生产力和自定义。
 
 You may have noticed how the code editors focus primarily on the text contents of the file, where the IDEs expose various tools to manage your code.
+
 您可能已经注意到代码编辑器如何主要关注文件的文本内容，其中 IDE 公开了各种工具来管理您的代码。
 
 These examples are all local programs you can run on your computer, but there are also cloud-based editors that you can use.
