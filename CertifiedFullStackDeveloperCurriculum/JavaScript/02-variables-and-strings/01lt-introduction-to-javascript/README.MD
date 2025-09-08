@@ -152,167 +152,226 @@ Understanding these data types helps you handle and work with various kinds of d
 了解这些数据类型有助于处理和处理程序中的各种数据，因为每种类型都有自己的特征和行为。
 
 ## What Are Variables, and What Are Guidelines for Naming JavaScript Variables?
-什么是变量，命名 JavaScript 变量的准则是什么？
+
 In JavaScript, variables act as containers for storing data that you can access and modify throughout your program.
+
 在 JavaScript 中，变量充当存储数据的容器，您可以在整个程序中访问和修改这些数据。
 
 You can think of variables as boxes that hold values. With variables, you can keep track of things like numbers or text and refer to these values whenever you need them in your program.
+
 您可以将变量视为保存值的框。使用变量，您可以跟踪数字或文本等内容，并在程序中需要时引用这些值。
 
 One way to declare a variable in JavaScript, is to use the let keyword. You will learn more about the let keyword as well as other ways to declare variables in future lectures.
+
 在 JavaScript 中声明变量的一种方法是使用 let 关键字。您将在以后的讲座中了解有关 let 关键字以及声明变量的其他方法的更多信息。
 
 Here's an example of using let to declare a variable called age:
+
 以下是使用 let 声明名为 age 的变量的示例：
 
 let age;
+
 Right now, the age variable does not have a value assigned to it. To assign a value to a variable you will need to use the assignment operator like this:
+
 目前， 年龄变量没有分配值。要为变量赋值，您需要使用赋值运算符，如下所示：
 
 let age = 25;
+
 The assignment operator looks like an equals sign (=) but it doesn't check for equality. You'll learn about the correct operators for checking equality in future lectures.
+
 赋值运算符看起来像等号 （=），但它不检查相等性。您将在以后的讲座中了解检查相等性的正确运算符。
 
 The assignment operator is used to assign a value to a variable. This process of assigning a value to a variable is known as initialization.
+
 赋值运算符用于为变量赋值。为变量赋值的过程称为初始化。
 
 One advantage of using the let keyword to declare variables is that you can reassign values to them. In programming, reassignment means giving a new value to a variable that already has one.
+
 使用 let 关键字声明变量的一个优点是可以为它们重新分配值。在编程中，重新赋值意味着为已经具有新值的变量赋予一个新值。
 
 Here is an example of reassigning the value for the age variable:
+
 以下是重新分配年龄变量值的示例：
 
 age = 30;
+
 Now the age variable holds the value of 30. Notice that the let keyword wasn't needed again because the age variable was already declared, so there's no need to declare it a second time.
+
 现在，age 变量的值为 30。请注意，由于已经声明了 age 变量，因此不再需要 let 关键字，因此无需再次声明它。
 
 When using reassignment, you only need to reference the variable name. Reassignment is useful because it allows you to update and change the value stored in a variable as your program runs. A good example of this would be updating points in a game.
+
 使用重赋值时，只需引用变量名称即可。重新赋值很有用，因为它允许您在程序运行时更新和更改存储在变量中的值。一个很好的例子是在游戏中更新积分。
 
 Naming variables may seem straightforward, but there are some rules and best practices to ensure your code is readable and functional.
+
 命名变量可能看起来很简单，但有一些规则和最佳实践可以确保您的代码可读且功能正常。
 
 Your variable names should describe what the data represents. For example, instead of using a name like x, a more descriptive name such as age or points makes your code easier to understand.
+
 变量名称应描述数据所代表的内容。例如，不要使用像 x 这样的名称，而使用更具描述性的名称（例如年龄或分数 ）可以使您的代码更易于理解。
 
 Variables in JavaScript must begin with a letter, an underscore (_), or a dollar sign ($). They cannot start with a number.
+
 JavaScript 中的变量必须以字母、下划线 （_） 或美元符号 （$） 开头。他们不能以数字开头。
 
 Variable names are case-sensitive, meaning the word age in all lowercase and the word Age with a capital A are considered different variables.
+
 变量名称区分大小写，这意味着所有小写的单词 age 和大写 A 的单词 age 被视为不同的变量。
 
 This is why it's important to stick with a consistent naming convention like camelCase. camelCase is where the first word is all lowercase and each subsequent word starts with an uppercase letter.
+
 这就是为什么坚持一致的命名约定（如驼峰命名法）很重要的原因。驼峰命名法是第一个单词全部小写，后续每个单词都以大写字母开头。
 
 Here is an example of using the camelCase naming convention for a variable:
+
 以下是对变量使用驼峰命名法约定的示例：
 
 let thisIsCamelCase;
+
 There are certain keywords in JavaScript that you cannot use as variable names, such as let, const, function, or return, as they are reserved for the language itself.
+
 JavaScript 中的某些关键字不能用作变量名称，例如 let、const、function 或 return，因为它们是为语言本身保留的。
 
 You should also avoid using special characters like exclamation points (!) or at (@) symbols, in your variable names. It is best to keep variable names readable by using letters, numbers, underscores, or dollar signs.
+
 您还应该避免在变量名称中使用特殊字符，例如感叹号 （！） 或 at （@） 符号。最好使用字母、数字、下划线或美元符号使变量名称保持可读性。
 
 By following these guidelines, your code will be cleaner and more manageable as it grows in complexity.
+
 通过遵循这些准则，您的代码将随着复杂性的增加而变得更干净、更易于管理。
 
 ## How Do let and const Work Differently When It Comes to Variable Declaration, Assignment, and Reassignment?
-在变量声明、赋值和重新赋值方面，let 和 const 的工作方式有何不同？
+
 When working with JavaScript, you'll often declare variables to store data that you plan to use throughout your program.
+
 使用 JavaScript 时，您经常会声明变量来存储您计划在整个程序中使用的数据。
 
 In modern JavaScript, let and const are the preferred ways to declare variables, but they differ in how they handle value assignment and reassignment.
+
 在现代 JavaScript 中，let 和 const 是声明变量的首选方法，但它们在处理值赋值和重赋的方式上有所不同。
 
 In this lecture, we'll explore how let and const differ in variable declaration, assignment, and reassignment.
+
 在本讲座中，我们将探讨 let 和 const 在变量声明、赋值和重赋中有何不同。
 
 The let keyword allows you to declare variables that can be updated or reassigned later. You can think of let as a flexible container – once you've stored a value in it, you can change that value as needed throughout your program.
+
 let 关键字允许您声明以后可以更新或重新分配的变量。你可以把 let 看作是一个灵活的容器——一旦你在其中存储了一个值，你就可以在整个程序中根据需要更改该值。
 
 Here's an example of declaring and assigning a variable with let:
+
 以下是使用 let 声明和赋值变量的示例：
 
 let score = 10;
+
 In this case, the variable score is declared and assigned the value 10. If you want to update the value later, you can easily do that:
+
 在这种情况下，将声明变量分数并分配值 10。如果您想稍后更新该值，您可以轻松地执行以下作：
 
 score = 20;
+
 Now, score holds the value 20. This makes let particularly useful when you know the value of a variable will change as your program runs.
+
 现在，score 保持值 20。当您知道变量的值会随着程序的运行而变化时， 这使得 let 特别有用。
 
 On the other hand, const is used to declare variables that are constant. Once you assign a value to a variable declared with const, you cannot reassign it.
+
 另一方面，const 用于声明常量变量。将值赋值给用 const 声明的变量后，就无法重新赋值。
 
 This makes const ideal for values that you don't want to change accidentally during the execution of your program.
+
 这使得 const 非常适合您不想在程序执行期间意外更改的值。
 
 Here's an example of declaring and assigning a variable with const:
+
 以下是使用 const 声明和赋值变量的示例：
 
 const maxScore = 100;
+
 Once maxScore is assigned the value 100, it cannot be changed:
+
 一旦 maxScore 被分配了值 100，就无法更改它：
 
 maxScore = 200; // This will result in an error
+
 Trying to reassign a value to a const variable will throw an error in your JavaScript console, as const variables are immutable once they are assigned.
+
 尝试将值重新分配给 const 变量会在 JavaScript 控制台中抛出错误，因为 const 变量一旦被赋值就不可变。
 
 You can declare a let variable without immediately assigning it a value, and you can assign it a value later:
+
 您可以声明一个 let 变量，而无需立即为其赋值，并且可以稍后为其赋值：
 
 let age;
 age = 25;
+
 Variables declared with const must be assigned a value at the time of declaration. If you try to declare a const variable without assigning it a value, you will get an error:
+
 使用 const 声明的变量必须在声明时分配一个值。如果您尝试声明一个 const 变量而不为其赋值，您将收到一个错误：
 
 const age; // Error: Missing initializer in const declaration
+
 You should use let when you need to declare variables that will be reassigned later. For example, tracking a changing score or updating a value over time in your program.
+
 当你需要声明稍后将重新分配的变量时，你应该使用 let。例如，跟踪不断变化的分数或随时间推移更新程序中的值。
 
 Use const when you want to declare variables that should remain constant, like configuration values or settings that shouldn't be changed accidentally.
+
 当您想要声明应保持不变的变量时，请使用 const，例如不应意外更改的配置值或设置。
 
 You can also use the var keyword, but it's not as recommended anymore. The var is kind of like let, except it has a wider scope, which is more likely to cause problems in your program.
+
 您也可以使用 var 关键字，但不再推荐它。var 有点像 let，只是它的作用域更广，这更有可能在程序中引起问题。
 
 ## What Is a String in JavaScript, and What Is String Immutability?
-什么是 JavaScript 中的字符串，什么是字符串不变性？
+
 In JavaScript, a string is a sequence of characters used to represent text data. Strings are one of the primitive data types in the language, along with numbers, booleans, null, and undefined.
+
 在 JavaScript 中，字符串是用于表示文本数据的字符序列。字符串是该语言中的原始数据类型之一，还有数字、布尔值、 空值和未定义值 。
 
 To create a string in JavaScript, you can use single quotes ('), or double quotes (").
+
 要在 JavaScript 中创建字符串，可以使用单引号 （'） 或双引号 （“）。
 
 Here is an example of creating two variables that hold string values:
+
 下面是创建两个保存字符串值的变量的示例：
 
 let singleQuotes = 'This is a string';
 let doubleQuotes = "This is also a string";
+
 Even though you can use single or double quotes to create strings, it's important to be consistent. If a string begins with a single quote, it must also end with a single quote.
+
 尽管您可以使用单引号或双引号来创建字符串，但保持一致很重要。如果字符串以单引号开头，则它也必须以单引号结尾。
 
 The same applies to double quotes. The following example will throw an error because it starts with a double quote and ends with a single quote:
+
 这同样适用于双引号。以下示例将引发错误，因为它以双引号开头，以单引号结尾：
 
 const improperStr = "Do not do this';
+
 Another thing to take into account is that strings are immutable. In programming, immutability means that once something is created, it cannot be changed. So, when you create a string, you can't change its characters directly. Instead, you would create a new string if you want to make changes.
+
 另一件需要考虑的事情是字符串是不可变的。在编程中，不变性意味着某物一旦被创建，就无法更改。因此，当您创建字符串时，您无法直接更改其字符。相反，如果要进行更改，则需要创建一个新字符串。
 
 Here is an example of assigning a new string to a developer variable:
+
 下面是将新字符串分配给开发人员变量的示例：
 
 let developer = "Jessica";
 developer = "Quincy";
+
 Since strings are immutable, we can't update the first string directly. That is why we are assigning a new string to the developer variable.
+
 由于字符串是不可变的，因此我们不能直接更新第一个字符串。这就是为什么我们要为 developer 变量赋值一个新字符串。
 
 Strings are an important part of programming, and in future lectures, you will learn advanced techniques for manipulating them and harnessing their full potential to create dynamic and interactive applications.
+
 字符串是编程的重要组成部分，在以后的讲座中，您将学习作字符串并充分利用其潜力来创建动态和交互式应用程序的高级技术。
 
 ## What Is String Concatenation, and How Can You Concatenate Strings with Variables?
-什么是字符串串联，如何将字符串与变量连接起来？
+
 In JavaScript, working with text is an essential part of coding, and often, you'll need to combine or join pieces of text together. This process is called string concatenation.
 在 JavaScript 中，处理文本是编码的重要组成部分，通常，您需要将文本片段组合或连接在一起。此过程称为字符串串联。
 
