@@ -127,99 +127,130 @@ There are also some other graphical ways to create a new directory.
 还有一些其他图形方法可以创建新目录。
 
 Depending on your operating system, you might have a context menu (or right-click option) to open VS Code directly from your file explorer. You could also choose to double-click on the VS Code application. If you feel comfortable with the command line you can run the command code /path/to/folder.
+
 根据您的作系统，您可能有一个上下文菜单（或右键单击选项）来直接从文件资源管理器打开 VS Code。您还可以选择双击 VS Code 应用程序。如果您对命令行感到满意，可以运行命令代码 /path/to/folder。
 
 Once it's open, you should see a new blank workspace.
+
 打开后，您应该会看到一个新的空白工作区。
 
 To create a new file, click on the File menu at the top-left corner and select New File.... Then name your file index.html and click on Save.
+
 要创建新文件，请单击左上角的“ 文件 ”菜单，然后选择“ 新建文件...”。然后将您的文件命名为 index.html 并单击保存 。
 
 Now you should see your new file in the explorer tab. Try adding some HTML to your index.html file.
+
 现在您应该在资源管理器选项卡中看到您的新文件。尝试向 index.html 文件添加一些 HTML。
 
 Now you might be tempted to open the HTML file in your browser directly. While that can work, it can also lead to all sorts of unexpected bugs, such as CSS not loading properly.
+
 现在您可能想直接在浏览器中打开 HTML 文件。虽然这可以工作，但它也可能导致各种意外错误，例如 CSS 无法正确加载。
 
 Instead, you should put your HTML file behind a proper web server. That can sound like an intimidating task if you are new to coding, but there's actually a way to do this right from VS Code.
+
 相反，您应该将 HTML 文件放在适当的 Web 服务器后面。如果您是编码新手，这听起来像是一项令人生畏的任务，但实际上有一种方法可以直接从 VS Code 中完成此作。
 
 You'll need to grab the Live Server extension first, which is available for free in the marketplace.
+
 您需要先获取 Live Server 扩展，该扩展可在市场上免费获得。
 
 Click on the extensions tab in the left hand corner and type in Live Server in the search bar.
+
 单击左上角的扩展选项卡，然后在搜索栏中输入 Live Server。
 
 Once you have this installed, you should see a Go live button in your status bar. Make sure you have your HTML file open, and then click it.
+
 安装后，您应该会在状态栏中看到一个上线按钮。确保已打开 HTML 文件，然后单击它。
 
 Your new page should open automatically in a new tab in the browser. If it doesn't then you can go directly to http://localhost:5500/
+
 您的新页面应该会在浏览器的新选项卡中自动打开。如果没有，那么您可以直接转到 http://localhost:5500/
 
 Congratulations! You've now set up your very own project in VS Code, and can view your changes with live server.
+
 祝贺！现在，你已经在 VS Code 中设置了自己的项目，并且可以使用实时服务器查看更改。
 
 ## What Are Several Useful Keyboard Shortcuts for Maximizing Productivity in VS Code?
-在 VS Code 中最大限度地提高工作效率的几个有用的键盘快捷键有哪些？
+
 You're likely already familiar with some of the basic shortcuts, which are inherited from your operating system. Shortcuts like Ctrl + S to save, Ctrl + C to copy, and Ctrl + V to paste all work in VS Code.
+
 您可能已经熟悉一些从您的作系统继承而来的基本快捷方式。Ctrl + S 保存、Ctrl + C 复制和 Ctrl + V 粘贴等快捷键在 VS Code 中都有效。
 
 But there's a few that are application specific and can still level up your productivity. It's worth noting that some of these shortcuts may differ by operating system.
+
 但有一些是特定于应用程序的，仍然可以提高您的工作效率。值得注意的是，其中一些快捷方式可能因作系统而异。
 
 For example, Shift + Alt + F will run your configured formatter (such as prettier, for a JavaScript project) on the currently opened file.
+
 例如，Shift + Alt + F 将在当前打开的文件上运行您配置的格式化程序（例如 prettier，对于 JavaScript 项目）。
 
 Or Ctrl + Shift + F (Windows), or Cmd + Shift + F (Mac), to search the text contents of all the files in your workspace. Then Ctrl + Shift + H (Windows), or Cmd + Shift + H (Mac), if you want to run a find-and-replace.
+
 或 Ctrl + Shift + F （Windows） 或 Cmd + Shift + F （Mac），以搜索工作区中所有文件的文本内容。然后 Ctrl + Shift + H （Windows） 或 Cmd + Shift + H （Mac），如果要运行查找和替换。
 
 If you need to remove a line, Ctrl + Shift + K (Windows), or Cmd + Shift + K (Mac), will delete it.
+
 如果您需要删除一行，Ctrl + Shift + K （Windows） 或 Cmd + Shift + K （Mac） 将删除它。
 
 Need some extra room for all your code? Ctrl + B (Windows), or Cmd + B (Mac), will hide the sidebar - which has the file list and extensions menu.
+
 需要一些额外的空间来存储您的所有代码？Ctrl + B （Windows） 或 Cmd + B （Mac） 将隐藏侧边栏 - 其中包含文件列表和扩展名菜单。
 
 Or maybe you just can't see your code? Ctrl + plus (Windows), or Cmd + plus (Mac), will increase the scaling of the editor, and Ctrl + minus (Windows), or Cmd + minus (Mac), will decrease it.
+
 或者，也许您只是看不到您的代码？Ctrl + 加号  （Windows） 或 Cmd + 加号  （Mac） 将增加编辑器的缩放比例，Ctrl + 减号  （Windows） 或 Cmd + 减号  （Mac） 将减小缩放比例。
 
 Finally, if you forget any of these shortcuts, you always have Ctrl + Shift + P (Windows), or Cmd + Shift + P (Mac), which opens the command palette for you to select whatever you may need.
+
 最后，如果您忘记了这些快捷键中的任何一个，您始终可以使用 Ctrl + Shift + P （Windows） 或 Cmd + Shift + P （Mac），它会打开命令面板供您选择可能需要的任何内容。
 
 With this knowledge, and maybe a little practice, you are well on your way to becoming a VS Code power user.
+
 有了这些知识，也许还有一点练习，您就可以顺利成为 VS Code 高级用户。
 
 ## What Are Some Good VS Code Extensions You Can Use in Your Editor?
-您可以在编辑器中使用哪些好的 VS Code 扩展？
+
 Better Comments is an extension that offers special highlighting for specific code comments. For example, it will call out "TODO" comments, as well as syntax to indicate questions or warnings.
+
 Better Comments 是一个扩展，可为特定代码注释提供特殊突出显示。例如，它将调用“TODO”注释，以及指示问题或警告的语法。
 
 Code Spell Checker offers indication when you have spelled something incorrectly in your code. Because it is designed for code files, it will account for things like camel case.
+
 Code Spell Checker 会在代码中拼写错误时提供指示。因为它是为代码文件设计的，所以它会考虑驼峰式命名法之类的内容。
 
 Error Lens will help you catch any highlighted errors in your code. Rather than having to rely on the underline that VS Code shows by default, this extension highlights the entire line and displays the error message.
+
 Error Lens 将帮助你捕获代码中任何突出显示的错误。此扩展程序不必依赖 VS Code 默认显示的下划线，而是突出显示整行并显示错误消息。
 
 Indent Rainbow adds color to your different levels of indentation. In combination with VS Code's native bracket pair colorization, this can dramatically help identify what scope your code is in.
+
 缩进彩虹为不同级别的缩进添加颜色。结合 VS Code 的本机括号对着色，这可以极大地帮助识别代码所处的范围。
 
 Or maybe you're looking for something a bit more practical? Consider an AI assistant, like GitHub Copilot or Tabnine, to offer you inline suggestions as you are writing your code.
+
 或者，也许您正在寻找更实用的东西？考虑使用 AI 助手，例如 GitHub Copilot 或 Tabnine，在您编写代码时为您提供内联建议。
 
 An icon pack, such as VS Code Great Icons, can help make your file tree cleaner and easier to parse at a glance. And an extension like Colorize can help you understand the values in your CSS properties.
+
 图标包（如 VS Code Great Icons）可以帮助使文件树更干净，更易于一目了然地解析。像 Colorize 这样的扩展可以帮助您了解 CSS 属性中的值。
 
 You'll also want language-specific extensions for your projects. If you are using JavaScript, you will likely want ESLint and Prettier to lint and format your code. If you are using TypeScript, you might want Pretty Typescript Errors for easier to read messages.
+
 您还需要为您的项目提供特定于语言的扩展。如果您使用的是 JavaScript，您可能希望 ESLint 和 Prettier 来填充和格式化您的代码。如果您使用的是 TypeScript，您可能需要 Pretty Typescript Errors 以便于阅读消息。
 
 Finally, you can also have a bit of fun with your editor. VS Code Pets offers configurable virtual pets to keep you company while you squash some bugs.
+
 最后，您还可以与编辑器一起享受一些乐趣。VS Code Pets 提供可配置的虚拟宠物，让您在消除一些错误的同时陪伴您。
 
 Power Mode will create flashy effects when you achieve a high enough "combo" by writing more code.
+
 当您通过编写更多代码获得足够高的“组合”时， 电源模式将产生华丽的效果。
 
 Discord Presence will let you show off what you're working on to all of your friends.
+
 Discord Presence 可让您向所有朋友展示您正在做的事情。
 
 And there are so many more extensions out there. Feel free to explore the extension marketplace and see what works best for you.
+
 还有更多的扩展。请随意探索扩展市场，看看什么最适合您。
 
