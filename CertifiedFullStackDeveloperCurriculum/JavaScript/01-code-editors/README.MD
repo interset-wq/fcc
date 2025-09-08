@@ -79,39 +79,51 @@ The application you use might be different for specific projects. You should exp
 ## How to Install Visual Studio Code onto Your Computer
 
 To install VS Code, you'll want to visit their website to get the appropriate installer for your operating system. Make sure you visit the VS Code website, and not the Visual Studio website.
+
 要安装 VS Code，您需要访问他们的网站以获取适合您的作系统的安装程序。请确保访问 VS Code 网站，而不是 Visual Studio 网站。
 
 For Windows, you can download an EXE installer. Once you've downloaded it, run the file and the setup wizard will take you through the installation process.
+
 对于 Windows，您可以下载 EXE 安装程序。下载后，运行该文件，安装向导将引导您完成安装过程。
 
 For Mac, you can download a zip archive which contains a .app that you can run. You can also install VS Code via homebrew.
+
 对于 Mac，您可以下载包含可以运行的 .app 的 zip 存档。您还可以通过自制程序安装 VS Code。
 
 Open up the Terminal app on your Mac and run the following command:
+
 在 Mac 上打开终端应用程序并运行以下命令：
 
-brew install --cask visual-studio-code
+    brew install --cask visual-studio-code
+
 On Linux, you can download a .deb or .rpm file directly. Once you have it installed, you can use the appropriate executable, or CLI command (typically code), to launch the application. And now you're ready to code.
+
 在 Linux 上，您可以直接下载 .deb 或 .rpm 文件。安装后，您可以使用适当的可执行文件或 CLI 命令（通常是代码 ）来启动应用程序。现在你已经准备好编码了。
 
 ## How to Create a Project and Run Your Code Locally in VS Code
-如何在 VS Code 中创建项目并在本地运行代码
+
 To get started, you should know that VS Code considers projects to be "workspaces". The workspace is whichever directory you opened in VS Code.
+
 若要开始，您应该知道 VS Code 将项目视为“工作区”。工作区是在 VS Code 中打开的任何目录。
 
 To begin, you will need to use a command line interface to create a new directory for your new project. A directory is another name for the folder.
+
 首先，您需要使用命令行界面为新项目创建一个新目录。目录是文件夹的另一个名称。
 
 Command-line interfaces, or CLI for short, allow you to interact with your operating system through text-based commands. You will learn more about these tools in future lectures.
+
 命令行界面（简称 CLI）允许您通过基于文本的命令与作系统交互。您将在以后的讲座中了解有关这些工具的更多信息。
 
 If you are on Windows, you can use the Command Prompt or PowerShell. If you are on a Mac, you can open up your Terminal app.
+
 如果您使用的是 Windows，则可以使用命令提示符或 PowerShell。如果您使用的是 Mac，则可以打开终端应用程序。
 
 Once the command line is open, navigate to the home directory by typing in the cd ~ command and hitting enter on your keyboard. Then type in the mkdir my-project command and hit enter. mkdir, or "make directory" is the command used to create a new directory. You should then open your new directory with VS Code.
+
 打开命令行后，通过键入 cd ~ 命令并按键盘上的 Enter 键导航到主目录。然后输入 mkdir my-project 命令并按 Enter 键。mkdir，或“make directory”是用于创建新目录的命令。然后，您应该使用 VS Code 打开新目录。
 
 There are also some other graphical ways to create a new directory.
+
 还有一些其他图形方法可以创建新目录。
 
 Depending on your operating system, you might have a context menu (or right-click option) to open VS Code directly from your file explorer. You could also choose to double-click on the VS Code application. If you feel comfortable with the command line you can run the command code /path/to/folder.
