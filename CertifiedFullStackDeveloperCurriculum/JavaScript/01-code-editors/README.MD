@@ -45,31 +45,39 @@ You may have noticed how the code editors focus primarily on the text contents o
 您可能已经注意到代码编辑器如何主要关注文件的文本内容，其中 IDE 公开了各种工具来管理您的代码。
 
 These examples are all local programs you can run on your computer, but there are also cloud-based editors that you can use.
+
 这些示例都是可以在计算机上运行的本地程序，但也可以使用基于云的编辑器。
 
 A cloud-based editor is an online tool that allows users to write, edit, and manage code or text directly through a web browser without needing to install software locally.
+
 基于云的编辑器是一种在线工具，允许用户直接通过网络浏览器编写、编辑和管理代码或文本，而无需在本地安装软件。
 
 Let's take a look at a few cloud-based editors.
+
 让我们来看看一些基于云的编辑器。
 
 Replit is an online platform that provides a collaborative environment for coding, allowing users to write, run, and share code in various programming languages directly from a web browser.
+
 Replit 是一个在线平台，提供编码协作环境，允许用户直接从 Web 浏览器编写、运行和共享各种编程语言的代码。
 
 Another popular cloud-based editor is GitHub Codespaces. This is a cloud-based development environment that provides instant access to a fully-configured code editor and development tools directly from GitHub, enabling seamless coding and collaboration.
+
 另一个流行的基于云的编辑器是 GitHub Codespaces。这是一个基于云的开发环境，可直接从 GitHub 即时访问完全配置的代码编辑器和开发工具，从而实现无缝编码和协作。
 
 And another one is Gitpod. Gitpod is a cloud-based development environment that integrates with GitHub and GitLab, offering instant, customizable workspaces for coding, building, and debugging directly from your browser.
+
 另一个是 Gitpod。Gitpod 是一个基于云的开发环境，与 GitHub 和 GitLab 集成，提供即时、可自定义的工作区，用于直接从浏览器进行编码、构建和调试。
 
 And there are many more options. Some options, such as Visual Studio Code, are highly extensible and can work with multiple different project types and languages. Other options might be specifically tailored to a small subset of languages or project types.
+
 还有更多选项。某些选项（例如 Visual Studio Code）具有高度可扩展性，可以使用多种不同的项目类型和语言。其他选项可能是专门针对一小部分语言或项目类型量身定制的。
 
 The application you use might be different for specific projects. You should explore the options to see what will work best for your needs.
+
 对于特定项目，您使用的应用程序可能有所不同。您应该探索这些选项，看看什么最适合您的需求。
 
 ## How to Install Visual Studio Code onto Your Computer
-如何将 Visual Studio Code 安装到您的计算机上
+
 To install VS Code, you'll want to visit their website to get the appropriate installer for your operating system. Make sure you visit the VS Code website, and not the Visual Studio website.
 要安装 VS Code，您需要访问他们的网站以获取适合您的作系统的安装程序。请确保访问 VS Code 网站，而不是 Visual Studio 网站。
 
