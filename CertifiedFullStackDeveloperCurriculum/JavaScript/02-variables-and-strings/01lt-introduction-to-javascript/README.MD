@@ -398,137 +398,178 @@ In this example, we used the + operator to concatenate the firstName and lastNam
 在此示例中，我们使用 + 运算符将 firstName 和 lastName 变量与空格 （“ ”） 连接起来以创建全名。
 
 One disadvantage of using the + operator for string concatenation is that it can lead to spacing issues if you don't carefully manage the spacing between the concatenated strings.
+
 使用 + 运算符进行字符串串联的一个缺点是，如果不仔细管理串联字符串之间的间距，可能会导致间距问题。
 
 Here is an example where a space is missing:
+
 下面是一个缺少空格的示例：
 
 let firstName = "John";
 let lastName = "Doe";
 
 let fullName = firstName + lastName; // "JohnDoe"
+
 Whenever you use the + operator to concatenate strings, it is important to double check for any potential spacing issues.
+
 每当您使用 + 运算符连接字符串时，请务必仔细检查是否有任何潜在的间距问题。
 
 If you need to add or append to an existing string, then you can use the += operator. This is helpful when you want to build upon a string by adding more text to it over time.
+
 如果需要添加或追加到现有字符串，则可以使用 += 运算符。当您想要通过随着时间的推移向字符串添加更多文本来构建字符串时，这很有用。
 
 Here's an example of appending one string to another using the += operator:
+
 以下是使用 += 运算符将一个字符串附加到另一个字符串的示例：
 
 let greeting = 'Hello';
 greeting += ', John!';
 
 // greeting is now the string Hello, John!
+
 It is important to remember that strings are immutable which means once a string is created you can not alter it.
+
 重要的是要记住，字符串是不可变的，这意味着一旦创建了字符串，就无法更改它。
 
 In this case, the original string of Hello is not modified. Instead, greeting now references the new string of Hello, John!
+
 在这种情况下，不会修改 Hello 的原始字符串。相反，问候语现在引用了新字符串 Hello， John！
 
 Another way you can concatenate strings is to use the concat() method.
+
 连接字符串的另一种方法是使用 concat（） 方法。
 
 Before we begin learning about the concat() method, it is important to first understand what a method and a function are at a higher level.
+
 在我们开始学习 concat（） 方法之前，首先了解更高级别的方法和函数是什么非常重要。
 
 In programming, a function is a reusable block of code that performs a specific task and can be called with various inputs. A method, on the other hand, is a type of function that is associated with an object, meaning it operates on the data contained within that object.
+
 在编程中，函数是执行特定任务的可重用代码块，并且可以通过各种输入调用。另一方面，方法是一种与对象关联的函数类型，这意味着它对该对象中包含的数据进行作。
 
 In future lectures, we will dive much deeper into how functions, objects, and methods work in JavaScript. But for now, it is important to understand that JavaScript has dozens of methods you can use, like the concat() method.
+
 在以后的讲座中，我们将更深入地探讨函数、对象和方法在 JavaScript 中的工作原理。但就目前而言，重要的是要了解 JavaScript 有数十种您可以使用的方法，例如 concat（） 方法。
 
 Here's an example of using the concat() method to join two strings together:
+
 以下是使用 concat（） 方法将两个字符串连接在一起的示例：
 
 let str1 = 'Hello';
 let str2 = 'World';
 
 let result = str1.concat(' ', str2); // Hello World
+
 In this example, we use the concat() method to join str1, a space (' '), and str2 into a single string.
+
 在此示例中，我们使用 concat（） 方法将 str1、空格 （' '） 和 str2 连接成一个字符串。
 
 To conclude, + operator is best for simple concatenation, especially when you need to combine a few strings or variables.
+
 总而言之，+ 运算符最适合简单串联，尤其是当您需要组合几个字符串或变量时。
 
 The += operator is useful when building up a string step by step or appending new content to an existing string variable.
+
 += 运算符在逐步构建字符串或将新内容附加到现有字符串变量时非常有用。
 
 Finally, the concat() method is beneficial when you need to concatenate multiple strings together.
+
 最后，当您需要将多个字符串连接在一起时，concat（） 方法非常有用。
 
 ## What Is console.log Used For, and How Does It Work?
-console.log 有什么用途，它是如何工作的？
+
 In JavaScript, console.log() is a simple yet powerful tool used to display messages or output information to the browser's console. It's mostly used by developers to debug and inspect code while working on their programs.
+
 在 JavaScript 中，console.log（） 是一个简单但功能强大的工具，用于显示消息或将信息输出到浏览器的控制台。它主要由开发人员在处理程序时用于调试和检查代码。
 
 You can use console.log() to log text or variables to the console and ensure your code is running correctly.
+
 您可以使用 console.log（） 将文本或变量记录到控制台，并确保您的代码正确运行。
 
 To use console.log(), you call the method with the value or message you want to output inside the parentheses. Here are some examples:
+
 要使用 console.log（）， 您需要在括号内使用要输出的值或消息调用该方法。这里有些例子：
 
 console.log("Hello, world!");
 
 let num = 5;
 console.log(num);
+
 The first example prints Hello, world! in the browser's console, while the second example prints the value 5.
+
 第一个示例在浏览器的控制台中打印 Hello， world！，而第二个示例打印值 5。
 
 Here is another example of working with console.log():
+
 这是使用 console.log（） 的另一个示例：
 
 let name = "Alice";
 console.log("Hello, " + name + "!"); // Outputs: Hello, Alice!
+
 The console.log() method helps you monitor your code as it runs, making it easier to spot mistakes and understand how your program behaves.
+
 console.log（） 方法可帮助您在代码运行时监控代码，从而更轻松地发现错误并了解程序的行为方式。
 
 ## What Is the Role of Semicolons in JavaScript, and Programming in General?
-分号在 JavaScript 和一般编程中的作用是什么？
+
 In JavaScript, and many other programming languages, semicolons help delineate statements and improve code readability.
+
 在 JavaScript 和许多其他编程语言中，分号有助于描述语句并提高代码可读性。
 
 In JavaScript, a semicolon (;) is used to indicate the end of a statement.
+
 在 JavaScript 中，分号 （;） 用于指示语句的结尾。
 
 Just as a period (.) marks the end of a sentence in English, a semicolon signifies the end of an executable line of code. This allows the JavaScript engine to distinguish between separate commands.
+
 正如句点 （.） 在英语中标记句子的结尾一样，分号表示可执行代码行的结尾。这允许 JavaScript 引擎区分单独的命令。
 
 For example:  例如：
 
 let variableOne = 5;  // Declare a variable and assign a value
 let variableTwo = 10; // Declare another variable and assign a value
+
 In this code, the semicolons at the end of each line mark the end of each statement. Without them, the JavaScript engine might have trouble interpreting where one statement ends and another begins.
+
 在此代码中，每行末尾的分号标记每个语句的末尾。如果没有它们，JavaScript 引擎可能无法解释一个语句的结束位置和另一个语句的开始位置。
 
 Semicolons are primarily used to mark the end of a statement. This helps the JavaScript engine understand the separation of individual instructions, which is important for correct execution.
+
 分号主要用于标记语句的结尾。这有助于 JavaScript 引擎理解各个指令的分离，这对于正确执行非常重要。
 
 let a = 1;   // Statement ends here
 let b = 2;   // Another statement starts here
+
 While JavaScript has Automatic Semicolon Insertion (ASI) that can add semicolons automatically, explicitly including them improves code clarity and helps prevent errors that may arise from unexpected ASI behavior.
+
 虽然 JavaScript 具有自动分号插入 （ASI），可以自动添加分号，但显式包含分号可以提高代码清晰度，并有助于防止意外 ASI 行为可能引起的错误。
 
 Semicolons are used in many programming languages, including C, C++, and Java.
+
 分号用于许多编程语言，包括 C、C++ 和 Java。
 
 Semicolons mark the end of statements or instructions, helping the compiler or interpreter parse the code correctly. A compiler translates high-level programming language code into machine-readable code, which creates an executable file.
+
 分号标记语句或指令的结尾，帮助编译器或解释器正确解析代码。编译器将高级编程语言代码转换为机器可读代码，从而创建可执行文件。
 
 By clearly delineating statements, semicolons contribute to the readability and maintainability of code. Semicolons help prevent ambiguities in code execution and ensure that statements are correctly terminated.
+
 通过清楚地描述语句，分号有助于提高代码的可读性和可维护性。分号有助于防止代码执行中的歧义并确保语句正确终止。
 
 Semicolons are a fundamental part of JavaScript and many other programming languages.
+
 分号是 JavaScript 和许多其他编程语言的基本组成部分。
 
 They mark the end of statements, improve code readability, and help avoid errors related to Automatic Semicolon Insertion.
+
 它们标记语句的结尾，提高代码可读性，并有助于避免与自动分号插入相关的错误。
 
 By understanding and using semicolons properly, you can write more reliable and maintainable code.
+
 通过正确理解和使用分号，您可以编写更可靠和可维护的代码。
 
 ## What Are Comments in JavaScript, and When Should You Use Them?
-JavaScript 中的注释是什么，什么时候应该使用它们？
+
 Comments in programming are used to provide additional context for the code or leave notes for yourself and others.
 编程中的注释用于为代码提供额外的上下文或为自己和他人留下注释。
 
