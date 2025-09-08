@@ -13,9 +13,11 @@ While HTML and CSS are markup languages used to structure content and style elem
 虽然 HTML 和 CSS 是用于构建页面上的内容和样式元素的标记语言，但 JavaScript 通过支持更复杂的功能来超越这些语言，例如处理用户输入、动画元素，甚至构建完整的 Web 应用程序。
 
 For example, when you click a button, submit a form, or hover over a menu, JavaScript determines how the page behaves.
+
 例如，当您单击按钮、提交表单或将鼠标悬停在菜单上时，JavaScript 会确定页面的行为方式。
 
 Here's an example of how these three work together:
+
 以下是这三者如何协同工作的示例：
 
 <!DOCTYPE html>
@@ -32,56 +34,74 @@ Here's an example of how these three work together:
   <button onclick="alert('Button clicked!')">Click me</button>
 </body>
 </html>
+
 In this example, HTML is used to define the content: a heading (an h1 tag) and a button (the button tag).
+
 在此示例中，HTML 用于定义内容：标题（h1 标签）和按钮（ 按钮标签）。
 
 CSS is used to apply styles to the heading, such as making the text green. JavaScript is used to display an alert message when the button is clicked.
+
 CSS 用于将样式应用于标题，例如将文本设为绿色。JavaScript 用于在单击按钮时显示警报消息。
 
 To sum up, HTML provides structure, CSS adds styling, and JavaScript enables behavior, creating a complete and interactive web experience.
+
 综上所述，HTML 提供结构，CSS 添加样式，JavaScript 支持行为，从而创建完整的交互式 Web 体验。
 
 ## What Is a Data Type, and What Are the Different Data Types in JavaScript?
-什么是数据类型，JavaScript 中有哪些不同的数据类型？
+
 In JavaScript, a data type refers to the kind of value a variable holds.
+
 在 JavaScript 中，数据类型是指变量所包含的值类型。
 
 A variable is a named container that stores a value of a specific data type, allowing you to reference and manipulate it throughout your code. Data types help the program understand the kind of data it's working with, whether it's a number, text, or something else.
+
 变量是一个命名容器，用于存储特定数据类型的值，允许您在整个代码中引用和作它。数据类型有助于程序了解它正在处理的数据类型，无论是数字、文本还是其他内容。
 
 JavaScript has several basic data types that you'll use in your programs. We'll explore each data type in greater detail in future lectures. For now, here is a brief introduction of the different data types in JavaScript.
+
 JavaScript 有几种基本数据类型，您将在程序中使用它们。我们将在以后的讲座中更详细地探讨每种数据类型。现在，这里简要介绍一下 JavaScript 中的不同数据类型。
 
 The first data type we will look at is the Number type.
+
 我们将查看的第一个数据类型是 Number 类型。
 
 A Number represents both integers and floating-point values. Examples of integers include 7, 19, and 90. Examples of floating point numbers include 3.14 and 5.2. A floating point number is a number with a decimal point.
+
 数字表示整数和浮点值。整数的示例包括 7、19 和 90。浮点数的示例包括 3.14 和 5.2。浮点数是带有小数点的数字。
 
 The next data type is a String.
+
 下一个数据类型是 String。
 
 A String is a sequence of characters, or text, enclosed in quotes. Here are two examples:
+
 字符串是用引号括起来的字符或文本序列。下面是两个例子：
 
 "Hello, world"
 'JavaScript'
+
 Another data type used in JavaScript is the Boolean type.
+
 JavaScript 中使用的另一种数据类型是布尔类型。
 
 A Boolean represents one of two possible values: true or false. You can use a boolean to check if a page is loading, or if a user is logged in or not.
+
 布尔值表示两个可能的值之一：true 或 false。您可以使用布尔值来检查页面是否正在加载，或者用户是否已登录。
 
 The next two data types used in JavaScript are undefined and null.
+
 JavaScript 中使用的接下来的两种数据类型是 undefined 和 null。
 
 undefined means a variable has been declared but hasn't been given a value yet. null means the variable has been intentionally set to "nothing" and does not hold any value. We will explore more on how this works in future lectures.
+
 undefined 表示已声明变量但尚未被赋予值。null 表示变量已被故意设置为“无”并且不包含任何值。我们将在以后的讲座中更多地探讨这是如何运作的。
 
 The next data type we will look at is the Object type.
+
 我们将查看的下一个数据类型是 Object 类型。
 
 An Object is a more complex data type that can hold collections of key-value pairs. Let's break this down. The key (also called a property name), is like a label for the data, whereas the value, is the actual data you want to store. Here is an example:
+
 对象是一种更复杂的数据类型，可以保存键值对的集合。让我们来分解一下。键（也称为属性名称）类似于数据的标签，而值是您要存储的实际数据。这是一个例子：
 
 let book = {
@@ -89,35 +109,46 @@ let book = {
   author: "F. Scott Fitzgerald",
   year: 1925
 };
+
 In this object, title, author, and year are the keys (or property names). The Great Gatsby, F. Scott Fitzgerald, and 1925 are the corresponding values.
+
 在此对象中，title、author 和 year 是键（或属性名称）。《 了不起的盖茨比》、《F·斯科特·菲茨杰拉德 》和 《1925》是相应的值。
 
 Each key-value pair in an object is called a property. So we can say that this book object has three properties. This is just a basic introduction to objects and their properties. In future lectures, we'll go deeper into more advanced concepts.
+
 对象中的每个键值对称为属性。所以我们可以说这个书对象有三个属性。这只是对对象及其属性的基本介绍。在以后的讲座中，我们将更深入地探讨更高级的概念。
 
 The last two data types are the Symbol and BigInt data types.
+
 最后两种数据类型是 Symbol 和 BigInt 数据类型。
 
 A Symbol is a special type of value in JavaScript that is always unique and cannot be changed. It's often used to create unique labels or identifiers for properties:
+
 符号是 JavaScript 中的一种特殊类型的值，它始终是唯一的且无法更改。它通常用于为属性创建唯一标签或标识符：
 
 // Creating two symbols
 const symbol1 = Symbol('mySymbol');
 const symbol2 = Symbol('mySymbol');
 console.log(symbol1 === symbol2); // Outputs: false
+
 In this example, we create two symbols with the same description, but they are unique.
+
 在此示例中，我们创建了两个具有相同描述的符号，但它们是唯一的。
 
 BigInt is used for very large numbers that exceed the limit of the Number type:
+
 BigInt 用于超过 Number 类型限制的非常大的数字：
 
 const bigNumber = 1234567890123456789012345678901234567890n;
 console.log(bigNumber);
 // Outputs: 1234567890123456789012345678901234567890n
+
 In this example, we create a BigInt by adding n at the end of a very large number.
+
 在这个例子中，我们通过在一个非常大的数字的末尾加上 n 来创建一个 BigInt。
 
 Understanding these data types helps you handle and work with various kinds of data in your programs, as each type has its own characteristics and behaviors.
+
 了解这些数据类型有助于处理和处理程序中的各种数据，因为每种类型都有自己的特征和行为。
 
 ## What Are Variables, and What Are Guidelines for Naming JavaScript Variables?
