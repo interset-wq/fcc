@@ -373,21 +373,28 @@ Strings are an important part of programming, and in future lectures, you will l
 ## What Is String Concatenation, and How Can You Concatenate Strings with Variables?
 
 In JavaScript, working with text is an essential part of coding, and often, you'll need to combine or join pieces of text together. This process is called string concatenation.
+
 在 JavaScript 中，处理文本是编码的重要组成部分，通常，您需要将文本片段组合或连接在一起。此过程称为字符串串联。
 
 In this lecture, we'll focus on how string concatenation works, specifically using the + operator, the += operator, and the concat() method.
+
 在本讲座中，我们将重点介绍字符串串联的工作原理，特别是使用 + 运算符、+= 运算符和 concat（） 方法。
 
 The + operator is one of the simplest and most frequently used methods to concatenate strings. It allows you to join multiple strings or combine strings with variables that hold text.
+
 + 运算符是连接字符串的最简单和最常用的方法之一。它允许您连接多个字符串或将字符串与保存文本的变量组合在一起。
 
-Here's an example:  这是一个例子：
+Here's an example:  
+
+这是一个例子：
 
 let firstName = "John";
 let lastName = "Doe";
 
 let fullName = firstName + " " + lastName; // John Doe
+
 In this example, we used the + operator to concatenate the firstName and lastName variables along with a space (" ") to create the full name.
+
 在此示例中，我们使用 + 运算符将 firstName 和 lastName 变量与空格 （“ ”） 连接起来以创建全名。
 
 One disadvantage of using the + operator for string concatenation is that it can lead to spacing issues if you don't carefully manage the spacing between the concatenated strings.
