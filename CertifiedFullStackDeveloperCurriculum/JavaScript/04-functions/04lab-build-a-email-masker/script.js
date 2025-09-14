@@ -1,0 +1,20 @@
+const maskEmail = email => {
+    const atIndex = email.indexOf('@');
+    const user = email.slice(0, atIndex);
+    const domain = email.slice(atIndex);
+    const maskUser = user[0] + '*'.repeat(user.length - 2) + user[user.length - 1];
+    return maskUser + domain;
+}
+
+
+let email = "apple.pie@example.com";
+console.log(maskEmail(email));
+
+email = "freecodecamp@example.com";
+console.log(maskEmail(email));
+
+email = "info@test.dev";
+console.log(maskEmail(email));
+
+email = "user@domain.org";
+console.log(maskEmail(email));

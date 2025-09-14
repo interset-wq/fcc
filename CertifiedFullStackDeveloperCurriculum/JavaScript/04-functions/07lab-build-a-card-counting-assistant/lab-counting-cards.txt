@@ -1,0 +1,19 @@
+** start of script.js **
+
+let count = 0;
+
+const cc = card => {
+  if (card >= 2 && card <=6) {
+    count++;
+  } else if (card === 10 || 'JQKA'.includes(card)) {
+    count--;
+  }
+  if (count > 0) {
+    return count + ' Bet';
+  } else {
+    return count + ' Hold';
+  }
+}
+
+** end of script.js **
+
