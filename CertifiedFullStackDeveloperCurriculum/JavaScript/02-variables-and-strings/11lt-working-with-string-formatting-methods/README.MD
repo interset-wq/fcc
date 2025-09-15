@@ -1,4 +1,5 @@
-# Working with String Formatting Methods, Not started
+# Working with String Formatting Methods 字符串格式化-大小写转换和删除空白
+
 In this lecture you will learn how to format strings by changing their case using toUpperCase() and toLowerCase() methods, and how to remove whitespace using trim(), trimStart(), and trimEnd() methods.
 
 ## How Can You Change the Casing for a String?
