@@ -1,17 +1,22 @@
-# Working with Data Types, Not started
+# Working with Data Types 数据类型
+
 In the following lectures, you will learn how to work with data types in JavaScript. You will also learn how dynamic typing differs from static typing, the typeof operator, and the typeof null bug.
 
 ## What Is Dynamic Typing in JavaScript, and How Does It Differ from Statically Typed Languages?
-什么是 JavaScript 中的动态类型，它与静态类型语言有何不同？
+
 JavaScript is a dynamically typed language, meaning you don't need to specify the data type of a variable when you declare it. Instead, the type is determined based on the value assigned to the variable while the program is running. This allows you to change the type of a variable throughout the program.
+
 JavaScript 是一种动态类型语言，这意味着您在声明变量时无需指定变量的数据类型。相反，类型是根据程序运行时分配给变量的值确定的。这允许您在整个程序中更改变量的类型。
 
 Let's look at an example:
+
 让我们看一个例子：
 
 let example = "Hello";
 example = 42;
+
 In this example, we have a variable called example with the data type of string. But then we update value to be a number instead.
+
 在这个例子中，我们有一个名为 example 的变量，数据类型为 string。但是，我们将 value 更新为数字。
 
 The flexibility of dynamic typing makes JavaScript more forgiving and easy to work with for quick scripting, but it can also introduce bugs that may be harder to catch, especially as your program grows larger.
