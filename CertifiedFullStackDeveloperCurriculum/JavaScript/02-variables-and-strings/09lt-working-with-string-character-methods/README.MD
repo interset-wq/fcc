@@ -1,4 +1,4 @@
-# Working with String Character Methods 字符方法
+# Working with String Character Methods 字符方法ASCII和数字相互转换
 
 In this lecture you will learn about ASCII character encoding and how to use JavaScript's charCodeAt() and fromCharCode() methods to convert between characters and their numerical ASCII values.
 
