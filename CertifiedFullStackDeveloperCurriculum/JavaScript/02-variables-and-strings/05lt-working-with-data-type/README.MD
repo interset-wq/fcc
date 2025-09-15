@@ -20,34 +20,45 @@ In this example, we have a variable called example with the data type of string.
 在这个例子中，我们有一个名为 example 的变量，数据类型为 string。但是，我们将 value 更新为数字。
 
 The flexibility of dynamic typing makes JavaScript more forgiving and easy to work with for quick scripting, but it can also introduce bugs that may be harder to catch, especially as your program grows larger.
+
 动态类型的灵活性使 JavaScript 更加宽容且易于使用以快速编写脚本，但它也可能引入可能更难捕获的错误，尤其是当您的程序变得越来越大时。
 
 In statically typed languages like Java or C++, you must declare the data type of a variable when you create it, and that type cannot change.
+
 在 Java 或 C++ 等静态类型语言中，您必须在创建变量时声明变量的数据类型，并且该类型不能更改。
 
 For instance, if you declare a variable as integer, you can only assign it integer values. If you try to assign it a different type, the program will throw an error.
+
 例如，如果您将一个变量声明为整数 ，则只能为其赋值整数值。如果您尝试为其分配不同的类型，程序将抛出错误。
 
 Here's an example in Java language:
+
 这是一个 Java 语言示例：
 
 int value = 42; // value must always be an integer
 value = "Hello"; // This would cause an error in Java
+
 The difference between dynamic typing and static typing lies in the flexibility vs. the safety of your code. Dynamically typed languages offer flexibility but at the cost of potential runtime errors.
+
 动态类型和静态类型之间的区别在于代码的灵活性与安全性。动态类型语言提供了灵活性，但代价是潜在的运行时错误。
 
 Statically typed languages enforce stricter rules that can prevent certain errors, but they require more upfront declaration and offer less flexibility in changing types.
+
 静态类型语言强制执行更严格的规则，可以防止某些错误，但它们需要更多的预先声明，并且在更改类型时提供较少的灵活性。
 
 Here is another example of creating a variable with a type set to number then changing it to later be of type string:
+
 这是另一个创建类型设置为 number 的变量的示例，然后将其更改为字符串类型：
 
 let data = 100;  // Initially a number
 data = "New data";  // Dynamically changes to a string
+
 In a statically typed language, this kind of change would not be allowed, as the data type would be fixed.
+
 在静态类型语言中，不允许进行这种更改，因为数据类型是固定的。
 
 In conclusion, JavaScript's dynamic typing allows variables to change types freely, which offers flexibility but can lead to unexpected errors during execution.
+
 总之，JavaScript 的动态类型允许变量自由更改类型，这提供了灵活性，但在执行过程中可能会导致意外错误。
 
 Statically typed languages like Java require you to specify variable types upfront, which helps catch errors before the program runs but offers less flexibility.
