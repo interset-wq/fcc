@@ -62,49 +62,65 @@ In conclusion, JavaScript's dynamic typing allows variables to change types free
 总之，JavaScript 的动态类型允许变量自由更改类型，这提供了灵活性，但在执行过程中可能会导致意外错误。
 
 Statically typed languages like Java require you to specify variable types upfront, which helps catch errors before the program runs but offers less flexibility.
+
 像 Java 这样的静态类型语言要求您预先指定变量类型，这有助于在程序运行之前捕获错误，但灵活性较差。
 
 ## How Does the typeof Operator Work, and What Is the typeof null Bug in JavaScript?
-typeof 运算符如何工作，JavaScript 中的 typeof null 错误是什么？
+
 The typeof operator in JavaScript is a simple yet powerful tool that lets you see the data type of a variable or value. It always returns a string indicating the type.
+
 JavaScript 中的 typeof 运算符是一个简单而强大的工具，可让您查看变量或值的数据类型。它始终返回一个指示类型的字符串。
 
 Let's take a look at a few examples:
+
 让我们看几个例子：
 
 let num = 42;
 console.log(typeof num); // "number"
+
 In this first example, we have created a variable called num and assigned it the number 42. When you use the typeof operator on the variable named num, it will return the string number.
+
 在第一个示例中，我们创建了一个名为 num 的变量，并为其分配了数字 42。当您在名为 num 的变量上使用 typeof 运算符时，它将返回字符串 number。
 
 Here is another example of using the typeof operator on variable called isUserLoggedIn:
+
 这是在名为 isUserLoggedIn 的变量上使用 typeof 运算符的另一个示例：
 
 let isUserLoggedIn = true;
 console.log(typeof isUserLoggedIn); // "boolean"
+
 When you use the typeof operator on the isUserLoggedIn variable, it will return a string boolean because the boolean true was assigned to the variable.
+
 当您在 isUserLoggedIn 变量上使用 typeof 运算符时，它将返回一个字符串布尔值 ，因为布尔值 true 已分配给该变量。
 
 Using the typeof operator can be especially useful when you're debugging or trying to understand what kind of data you're working with in your code.
+
 当您调试或尝试了解您在代码中使用的数据类型时，使用 typeof 运算符特别有用。
 
 However, there's a well-known quirk in JavaScript when it comes to null.
+
 然而，当涉及到 null 时，JavaScript 中有一个众所周知的怪癖。
 
 Let's take a look at an example:
+
 我们来看一个例子：
 
 let exampleVariable = null;
 console.log(typeof exampleVariable); // "object"
+
 In this example, we have a variable called exampleVariable and have assigned it the value of null. But when we use the typeof operator, it returns the string object.
+
 在此示例中，我们有一个名为 exampleVariable 的变量，并为其分配了 null 值。但是当我们使用 typeof 运算符时，它会返回字符串对象 。
 
 This is widely considered a bug in JavaScript, dating back to its early days. The reason for this behavior is rooted in the way JavaScript was originally designed.
+
 这被广泛认为是 JavaScript 中的一个错误，可以追溯到早期。这种行为的原因源于 JavaScript 最初的设计方式。
 
 When the language was first implemented, values like null were represented as a special type of object, leading to this unexpected result.
+
 当该语言首次实现时，像 null 这样的值被表示为一种特殊类型的对象，导致了这种意外的结果。
 
 Unfortunately, this has become a part of the language, and while it's confusing, it's something you'll need to be aware of.
+
 不幸的是，这已经成为语言的一部分，虽然它令人困惑，但这是您需要注意的事情。
 
