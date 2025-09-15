@@ -1,4 +1,5 @@
-# Working with String Search and Slice Methods, Not started
+# Working with String Search and Slice Methods 切片和字符串的包含关系
+
 In this lecture you will learn how to search for substrings using the includes() method and how to extract portions of strings using the slice() method.
 
 ## How Can You Test if a String Contains a Substring?
