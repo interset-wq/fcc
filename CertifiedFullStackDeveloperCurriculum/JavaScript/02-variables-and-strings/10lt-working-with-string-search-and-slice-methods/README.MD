@@ -29,43 +29,56 @@ For the syntax, the searchValue is the substring you want to look for within the
 对于语法，searchValue 是您要在字符串中查找的子字符串。这里有一个例子：
 
 Example Code  示例代码
+
 let phrase = "JavaScript is awesome!";
 let result = phrase.includes("awesome");
 
 console.log(result);  // true
+
 In this example, the word awesome is found within the string JavaScript is awesome!, so the includes() method returns true.
+
 在此示例中，在字符串 JavaScript is awesome！ 中找到了 awesome 一词，因此 includes（） 方法返回 true。
 
 It's important to note that the includes() method is case-sensitive. This means that the exact match of the characters is required, including their case.
+
 重要的是要注意 includes（） 方法区分大小写。这意味着需要字符的完全匹配，包括它们的大小写。
 
 For example:  例如：
 
 Example Code  示例代码
+
 let phrase = "JavaScript is awesome!";
 let result = phrase.includes("Awesome");
 
 console.log(result);  // Output: false
+
 Since Awesome (with an uppercase A) does not match awesome (with a lowercase a), the result is false.
+
 由于 Awesome（大写 A）与 awesome（小写 a）不匹配，因此结果为 false。
 
 You can also use the includes() method to check for a substring starting at a specific index in the string by providing a second parameter:
+
 您还可以使用 includes（） 方法通过提供第二个参数来检查从字符串中特定索引开始的子字符串：
 
 Example Code  示例代码
+
 let text = "Hello, JavaScript world!";
 let result = text.includes("JavaScript", 7);
 
 console.log(result);  // true
+
 Here, the search for the substring JavaScript starts from the 7th position in the string, ensuring it skips any characters before this position.
+
 在这里，对子字符串 JavaScript 的搜索从字符串中的第 7 个位置开始，确保它跳过该位置之前的任何字符。
 
 The includes() method only returns a true or false result. It does not provide information on where the substring is located in the string or how many times it occurs. If you need that level of detail, other methods, such as the indexOf() method might be more suitable.
+
 includes（） 方法仅返回 true 或 false 结果。它不提供有关子字符串在字符串中的位置或出现次数的信息。如果您需要这种详细程度，其他方法（例如 indexOf（） 方法）可能更合适。
 
-## How Can You Extract a Substring from a String?
-如何从字符串中提取子字符串？
+## How Can You Extract a Substring from a String? 字符串切片
+
 When working with strings in JavaScript, you often need to extract a portion or substring from a larger string.
+
 在 JavaScript 中使用字符串时，您通常需要从较大的字符串中提取部分或子字符串。
 
 For example, you may want to extract part of a word, a specific character sequence, or just a fragment of a sentence.
