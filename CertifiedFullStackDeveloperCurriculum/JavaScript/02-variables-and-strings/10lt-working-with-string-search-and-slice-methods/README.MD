@@ -2,23 +2,30 @@
 
 In this lecture you will learn how to search for substrings using the includes() method and how to extract portions of strings using the slice() method.
 
-## How Can You Test if a String Contains a Substring?
-如何测试字符串是否包含子字符串？
+## How Can You Test if a String Contains a Substring? 字符串是否包含
+
 When working with strings in JavaScript, there are many cases where you might need to check whether a string contains a specific substring, which is a smaller part of that string.
+
 在 JavaScript 中使用字符串时，在许多情况下，您可能需要检查字符串是否包含特定的子字符串，该子字符串是该字符串的较小部分。
 
 For example, you might want to check if a user's input includes a specific word or character before performing some action. One way to achieve this is by using the includes() method.
+
 例如，您可能希望在执行某些作之前检查用户的输入是否包含特定单词或字符。实现此目的的一种方法是使用 includes（） 方法。
 
 The includes() method is used to check if a string contains a specific substring. If the substring is found within the string, the method returns true otherwise, it returns false.
+
 includes（） 方法用于检查字符串是否包含特定的子字符串。如果在字符串中找到子字符串，则该方法返回 true，否则返回 false。
 
 Here's the basic syntax:
+
 以下是基本语法：
 
 Example Code  示例代码
+
 string.includes(searchValue);
+
 For the syntax, the searchValue is the substring you want to look for within the string. And here's an example:
+
 对于语法，searchValue 是您要在字符串中查找的子字符串。这里有一个例子：
 
 Example Code  示例代码
