@@ -1,8 +1,9 @@
-# Working with Numbers and Arithmetic Operators, Not started
+# Working with Numbers and Arithmetic Operators
+
 In these lectures you will learn about the number type, arithmetic operators, and using them with numbers and strings.
 
 ## What Is the Number Type in JavaScript, and What Are the Different Types of Numbers Available?
-JavaScript 中的数字类型是什么，有哪些不同类型的数字可用？
+
 The Number type is one of the most used data types in JavaScript and other programming languages. Numbers might seem simple, but there's a lot to explore when it comes to numbers in JavaScript. So, let's take a deeper look. In JavaScript, the Number data type represents a numeric value.
 Number 类型是 JavaScript 和其他编程语言中最常用的数据类型之一。数字可能看起来很简单，但当涉及到 JavaScript 中的数字时，还有很多东西需要探索。那么，让我们深入了解一下。在 JavaScript 中，Number 数据类型表示数值。
 
