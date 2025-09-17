@@ -169,6 +169,7 @@ Make sure to avoid those types of calculations so you don't end up with unexpect
 确保避免这些类型的计算，以免在代码中最终出现意外结果。
 
 The remainder operator, represented by a percentage sign (%), returns the remainder of a division. The remainder in math is the leftover value after performing division:
+
 余数运算符由百分号 （%） 表示，返回除法的余数。数学中的余数是执行除法后的剩余值：
 
 const num1 = 10;
@@ -176,7 +177,9 @@ const num2 = 3;
 const remainder = num1 % num2;
 
 console.log(remainder); // 1
+
 The exponentiation operator, represented by a double asterisk (**), raises one number to the power of another:
+
 由双星号 （**） 表示的幂运算符将一个数字提高到另一个数字的幂：
 
 const num1 = 2;
@@ -184,37 +187,49 @@ const num2 = 3;
 
 const exponent = num1 ** num2;
 console.log(exponent); // 8
+
 It's possible to mix operators in a single operation or expression:
+
 可以在单个作或表达式中混合运算符：
 
 const result = 10 + 5 * 2 - 8 / 4;
 console.log(result); // 18
+
 When you mix different operators in a single expression, the JavaScript engine follows a system called operator precedence to determine the order of operations. Operator precedence determines the order in which operations are executed in expressions. You will learn more about operator precedence in future lectures.
+
 当您在单个表达式中混合使用不同的运算符时，JavaScript 引擎会遵循称为运算符优先级的系统来确定作的顺序。运算符优先级决定了表达式中作的执行顺序。您将在以后的讲座中了解有关运算符优先级的更多信息。
 
 ## What Happens When You Try to Do Calculations with Numbers and Strings?
-当您尝试使用数字和字符串进行计算时会发生什么？
+字符串参与数学运算
+
 JavaScript is a language where things sometimes work in surprising, or even weird, ways. One such surprise occurs when you mix numbers and strings in calculations. The first thing you'll probably try is to add a number and a string. In JavaScript, the + operator does double duty. It handles both addition and string concatenation, which is a way to join two strings together.
+
 JavaScript 是一种语言，事物有时会以令人惊讶甚至奇怪的方式工作。当您在计算中混合数字和字符串时，就会出现这样的惊喜。您可能要尝试的第一件事是添加一个数字和一个字符串。在 JavaScript 中，+ 运算符具有双重作用。它处理加法和字符串串联，这是一种将两个字符串连接在一起的方法。
 
 When you use + with a number and a string, JavaScript decides to treat them both as strings and joins them together. If you check the type of the result with the typeof operator, you'd see it's indeed a string:
+
 当您将 + 与数字和字符串一起使用时，JavaScript 决定将它们都视为字符串并将它们连接在一起。如果你使用 typeof 运算符检查结果的类型， 你会看到它确实是一个字符串：
 
 const result = 5 + '10';
 
 console.log(result); // 510
 console.log(typeof result); // string
+
 What do you think will happen if you switch the order of 5 and '10'?
+
 你认为如果你把 5 和 “10” 的顺序换了会发生什么？
 
 const result = '10' + 5;
 
 console.log(result); // 105
 console.log(typeof result); // string
-You can see the same thing happened. JavaScript sees a string in '10' and a number in 5, so it converts the number to a string and concatenates them. This is known as type coercion. Type coercion is when a value from one data type is converted into another.
+
+You can see the same thing happened. JavaScript sees a string in '10' and a number in 5, so it converts the number to a string and concatenates them. This is known as type coercion. Type coercion is when a value from one data type is  converted into another.
+
 你可以看到同样的事情发生了。JavaScript 看到 “10” 中的字符串和 5 中的数字，因此它将数字转换为字符串并将它们连接起来。这称为类型强制。类型强制是指将一种数据类型的值转换为另一种数据类型。
 
 Things get more interesting when you try to perform other arithmetic operations like subtraction, multiplication, or division with a string and number. In these cases, JavaScript tries to convert the string into a number before doing the math – another type coercion! Here's what happens:
+
 当您尝试执行其他算术运算（例如减法、乘法或用字符串和数字除法）时，事情会变得更加有趣。在这些情况下，JavaScript 会在进行数学运算之前尝试将字符串转换为数字——另一种类型强制！发生的情况如下：
 
 const subtractionResult = '10' - 5;
@@ -228,10 +243,13 @@ console.log(typeof multiplicationResult); // number
 const divisionResult = '20' / 2;
 console.log(divisionResult); // 10
 console.log(typeof divisionResult); // number
+
 In the examples above, JavaScript successfully converts the string '10' or '20' to a number and then performs the calculation. As a result, '10' - 5 yields 5, '10' * 2 gives 20, and '20' / 2 results in 10.
+
 在上面的示例中，JavaScript 成功地将字符串 “10” 或 “20” 转换为数字，然后执行计算。结果，'10' - 5 产生 5，'10' * 2 产生 20，'20' / 2 产生 10。
 
 But what if the string doesn't look like a number? Let's see what happens in that case:
+
 但是，如果字符串看起来不像数字怎么办？让我们看看在这种情况下会发生什么：
 
 const subtractionResult = 'abc' - 5;
@@ -245,10 +263,13 @@ console.log(typeof multiplicationResult); // number
 const divisionResult = 'abc' / 2;
 console.log(divisionResult); // NaN
 console.log(typeof divisionResult); // number
+
 In the examples above, the string 'abc' does not represent a valid numeric value, so JavaScript cannot convert it into a meaningful number. When such conversion fails, JavaScript returns NaN, which stands for "Not a Number". NaN is a special value of the Number type that represents an invalid or unrepresentable number.
+
 在上面的示例中，字符串 “abc” 不表示有效的数值，因此 JavaScript 无法将其转换为有意义的数字。当此类转换失败时，JavaScript 返回 NaN，代表“Not a Number”。NaN 是 Number 类型的特殊值，表示无效或不可表示的数字。
 
 What if you perform arithmetic operations with a boolean (true or false)? Let's see what happens. JavaScript treats booleans as numbers in mathematical operations: true becomes 1, and false becomes 0.
+
 如果您使用布尔值（ 真或假 ）执行算术运算怎么办？ 让我们看看会发生什么。JavaScript 将布尔值视为数学运算中的数字：true 变为 1，false 变为 0。
 
 const result1 = true + 1;
@@ -262,10 +283,13 @@ console.log(typeof result2); // number
 const result3 = 'Hello' + true;
 console.log(result3); // "Hellotrue"
 console.log(typeof result3); // string
+
 In the first two examples, true + 1 resulted in 2, and false + 1 resulted in 1. In the third example, 'Hello' + true, JavaScript converted true to a string and concatenates it with 'Hello', resulting in 'Hellotrue', which is a string.
+
 在前两个示例中，true + 1 导致 2，false + 1 导致 1。 在第三个示例“Hello”+ true 中，JavaScript 将 true 转换为字符串，并将其与 “Hello” 连接起来，从而生成 “Hellotrue”，这是一个字符串。
 
 For null and undefined, JavaScript treats null as 0 and undefined as NaN in mathematical operations:
+
 对于 null 和 undefined，JavaScript 在数学运算中将 null 视为 0，将 undefined 视为 NaN：
 
 const result1 = null + 5;
@@ -275,6 +299,8 @@ console.log(typeof result1); // number
 const result2 = undefined + 5;
 console.log(result2); // NaN
 console.log(typeof result2); // number
+
 JavaScript often performs type coercion, automatically converting data types such as numbers, strings, and booleans in sometimes unexpected ways. Understanding these conversions is crucial for avoiding bugs and writing robust code in your projects.
+
 JavaScript 经常执行类型强制，有时以意想不到的方式自动转换数字、字符串和布尔值等数据类型。了解这些转换对于避免错误和在项目中编写强大的代码至关重要。
 
