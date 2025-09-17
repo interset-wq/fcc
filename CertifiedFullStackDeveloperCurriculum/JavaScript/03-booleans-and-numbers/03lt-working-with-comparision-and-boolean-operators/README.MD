@@ -1,9 +1,11 @@
-# Working with Comparison and Boolean Operators, Not started
+# Working with Comparison and Boolean Operators 比较运算和布尔值
+
 In these lectures you will learn about booleans, and equality and inequality operators, and other comparison operators.
 
-## What Are Booleans, and How Do They Work with Equality and Inequality Operators?
-什么是布尔值，以及它们如何与相等和不等运算符一起工作？
+## What Are Booleans, and How Do They Work with Equality and Inequality Operators? 布尔值
+
 In an earlier lecture, you were first introduced to the concept of booleans, but in this lecture, we will dive deeper into how booleans work and how the equality and inequality operators work.
+
 在之前的讲座中，你已经首次接触到了布尔值的概念，但在本次讲座中，我们将深入探讨布尔值的工作原理以及相等和不等运算符的工作方式。
 
 Booleans are a data type with only true and false values. They're useful because they allow you to do something based on some conditions. Booleans are essential when you want to evaluate whether something should happen or not, like deciding if someone can access a certain feature in your app. Here is an example of setting the value true to a variable called isOldEnoughToDrive:
