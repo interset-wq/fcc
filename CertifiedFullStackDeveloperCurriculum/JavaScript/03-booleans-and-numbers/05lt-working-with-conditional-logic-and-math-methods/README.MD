@@ -1,4 +1,4 @@
-# Working with Conditional Logic and Math Methods 条件语句，三元运算符和数学操作
+# Working with Conditional Logic and Math Methods 条件语句，三元运算符，逻辑运算符和数学操作
 
 In these lectures you will learn about conditional statements, binary logical operators, and the Math object.
 
@@ -105,28 +105,37 @@ if (score >= 90) {
 } else {
  console.log('You failed! You need to study more!');
 }
+
 Since the score is currently 87, then the message of You got a B would be logged to the console.
+
 由于当前 score 为 87 ，则 You got a B 的消息将被记录到控制台。
 
 The ternary operator is a compact way to write simple if/else statements. It has three parts: a condition, a result if the condition is true, and a result if it is false. Here's the basic syntax:
+
 三元运算符是一种简洁地编写简单条件语句的方式。它包含三个部分：一个条件、条件为真时的结果以及条件为假时的结果。以下是基本语法：
 
 condition ? expressionIfTrue : expressionIfFalse;
+
 Here's an example dealing with weather temperatures in Celsius:
+
 这里有一个处理摄氏温度的例子：
 
 const weather = temperature > 25 ? 'sunny' : 'cool';
 
 console.log(`It's a ${weather} day!`);
+
 If temperature is greater than 25, the code above logs It's a sunny day!. If temperature is ever less than 25, it logs It's a cool day!.
+
 如果 temperature 大于 25 ，上面的代码会记录 It's a sunny day! 。如果 temperature 任何时候小于 25 ，它会记录 It's a cool day! 。
 
 So, which should you use between an if statement and a ternary? Use a ternary while dealing with a single condition or single expressions, or when you want a compact syntax for simple logic. Use if/else statements when you're dealing with complex conditions and multiple statements, as things become unreadable if you nest ternaries. 
+
 那么，在条件语句和三元运算符之间，你应该选择哪一个？当你处理单个条件或单个表达式，或者当你想要简洁的语法来表示简单逻辑时，使用三元运算符。当你处理复杂条件和多个语句时，使用条件语句，因为嵌套三元运算符会使代码变得难以阅读。
 
-## What Are Binary Logical Operators, and How Do They Work?
-什么是二元逻辑运算符，它们是如何工作的？
+## What Are Binary Logical Operators, and How Do They Work? 二元逻辑运算符
+
 Binary logical operators help you evaluate two expressions and return a result based on their truthiness. Let's look at the three most common binary logical operators: logical AND, logical OR, and the nullish coalescing operator.
+
 二元逻辑运算符帮助你评估两个表达式，并根据它们的真值返回结果。让我们看看三种最常见的二元逻辑运算符：逻辑与、逻辑或和空合并运算符。
 
 The logical AND operator is represented by a double ampersand (&&). It checks if both operands are true and returns a result. If both operands are truthy, it returns the second value, that is, the one on the right:
