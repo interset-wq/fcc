@@ -41,11 +41,13 @@ let isOffline = false;
 console.log(!isOffline); // true
 
 The bitwise NOT operator is a less commonly used unary operator. Represented by a tilde, ~, it inverts the binary representation of a number. Computers store numbers in binary format (1s and 0s). The ~ operator flips every bit, meaning it changes all 1s to 0s and all 0s to 1s. You will learn more about binary and bits in a future lecture.
+
 位非运算符是一种不太常用的单目运算符。它用波浪号~表示，用于反转一个数的二进制表示。计算机以二进制格式（1 和 0）存储数字。~运算符翻转每一位，意味着将所有的 1 变为 0，所有的 0 变为 1。你将在未来的课程中了解更多关于二进制和位的内容。
 
 const num = 5; // The binary for 5 is 00000101
 
 console.log(~num); // -6
+
 In this example, 5 became -6 because by applying the ~ operator to 5, you get - (5 + 1), which equals -6 due to two's complement representation. Two's complement is a way computers represent negative numbers in binary. You probably won't use the bitwise NOT often unless you're working with low-level programming tasks like manipulating bits directly.
 在这个例子中，~将 0 变成了 1，因为将~运算符应用于 3，得到 4，由于二进制补码表示，4 等于 5。二进制补码是计算机在二进制中表示负数的一种方式。除非你正在处理像直接操作位这样的底层编程任务，否则你可能不会经常使用位非运算符。
 
