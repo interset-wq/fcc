@@ -1,20 +1,20 @@
-# Working with Conditional Logic and Math Methods 条件语句和数学操作
+# Working with Conditional Logic and Math Methods 条件语句，三元运算符和数学操作
 
 In these lectures you will learn about conditional statements, binary logical operators, and the Math object.
 
-## What Are Conditional Statements, and How Do If/Else If/Else Statements Work?
-什么是条件语句，以及 If/Else If/Else 语句是如何工作的？
+## What Are Conditional Statements, and How Do If/Else If/Else Statements Work? 条件语句
+
 Conditional statements let you make decisions in your JavaScript code. They allow your program to flow in a particular way based on certain conditions. Let's take a look at how if, else if, else, and the ternary operator work to let you control the flow of your code.
+
 条件语句让你能在 JavaScript 代码中做出决策。它们允许你的程序根据特定条件以特定方式运行。让我们看看 if 、 else if 、 else 以及三元运算符是如何工作的，以让你控制代码的流程。
 
 An if statement takes a condition and runs a block of code if that condition is truthy. Truthy values are any values that result in true when evaluated in a Boolean context like an if statement. Here are examples of truthy values:
+
 一个 if 语句会检查一个条件，如果这个条件为真，就会运行一个代码块。在布尔上下文中（比如一个 if 语句）被评估为 true 的任何值都是真值。以下是一些真值的例子：
 
 non-empty strings, for example, hello
-非空字符串，例如 hello
 
 any number other than 0 and -0, for example, 4, -5, and others
-任何不是 0 和 -0 的数字，例如 4 、 -5 等
 
 arrays  数组
 
@@ -23,21 +23,23 @@ objects  对象
 the boolean true  布尔值 true
 
 On the other hand, falsy values are values that evaluate to false in a boolean context. JavaScript has few falsy values, which makes them easy to remember. Here are a few falsy values:
+
 另一方面，假值是在布尔上下文中求值为 false 的值。JavaScript 中的假值很少，这使得它们容易记忆。以下是一些假值：
 
 boolean false
 
-0 (zero)   0 (零)
+0 (zero)  
 
-"" (empty string)   "" (空字符串)
+"" (empty string) 
 
 null
 
 undefined
 
-NaN (Not a Number)   NaN (非数字)
+NaN (Not a Number) 
 
 Now, that we have a basic understanding of truthy and falsy values, let's see how it works with if statements. In this first example, we are using a couple of if statements to check against truthy and falsy values:
+
 现在，我们已经对真值和假值有了基本的了解，让我们看看 if 语句是如何工作的。在这个第一个例子中，我们使用了一些 if 语句来检查真值和假值：
 
 if (null) {
@@ -47,10 +49,13 @@ if (null) {
 if ("freeCodeCamp") {
   console.log("This will run.");
 }
+
 Since null is a falsy value, the message inside the block will never be logged to the console. But for the second if statement, the string freeCodeCamp is a truthy value, and will be considered true in this boolean context of the if statement. As a result, the message This will run. will be logged to the console.
+
 由于 null 是一个假值，块内的消息永远不会被记录到控制台。但对于第二个 if 语句，字符串 freeCodeCamp 是真值，在这个 if 语句的布尔上下文中将被视为 true 。因此，消息 This will run. 将被记录到控制台。
 
 Let's take a look at a few more examples on how if statements work with different comparison operators. Here is an example of using an if statement to check if the user is eligible to vote:
+
 让我们看看 if 语句如何与不同的比较运算符一起使用的一些更多例子。这里有一个使用 if 语句来检查用户是否有资格投票的例子：
 
 const age = 22;
@@ -58,7 +63,9 @@ const age = 22;
 if (age >= 18) {
  console.log("You're eligible to vote"); // You're eligible to vote
 }
+
 In this example, since age is currently 22, this means the condition will evaluate to true because 22 is greater than or equal to 18. So the message You're eligible to vote will be logged to the console. If we change the example so age is now 15, then the condition will evaluate to false and the message will not be logged to the console:
+
 在这个例子中，由于 age 目前是 22 ，这意味着条件将评估为 true ，因为 22 大于或等于 18 。所以消息 You're eligible to vote 将被记录到控制台。如果我们更改示例，使 age 现在是 15 ，那么条件将评估为 false ，消息将不会被记录到控制台：
 
 const age = 15;
@@ -66,7 +73,9 @@ const age = 15;
 if (age >= 18) {
  console.log("You're eligible to vote"); // Code not running because age is less than 18
 }
+
 When a condition is false, then you can use an else clause:
+
 当条件是 false 时，你可以使用一个 else 子句：
 
 const age = 15;
@@ -76,10 +85,13 @@ if (age >= 18) {
 } else {
  console.log("You're not eligible to vote"); // You're not eligible to vote
 }
+
 In this example, 15 is not greater than or equal to 18, so the condition would be false. The code inside the else block will run in this case.
+
 在这个例子中， 15 不大于或等于 18 ，所以条件将是 false 。在这种情况下， else 块内的代码将运行。
 
 If you want to check multiple conditions, you can use an else if block. This allows your program to choose between more than two paths.
+
 如果你要检查多个条件，你可以使用一个 else if 块。这允许你的程序在两个以上的路径之间进行选择。
 
 const score = 87;
