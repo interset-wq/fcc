@@ -2,12 +2,14 @@
 
 In these lectures you will learn about unary and bitwise operators.
 
-## What Are Unary Operators, and How Do They Work?
-一元运算符是什么，它们是如何工作的？
+## What Are Unary Operators, and How Do They Work? 一元运算符
+
 Unary operators act on a single operand to perform operations like type conversion, value manipulation, or checking certain conditions. Let's look at some common unary operators and how they work.
+
 一元运算符作用于单个操作数，执行类型转换、值操作或检查某些条件等操作。让我们看看一些常见的一元运算符及其工作原理。
 
 The unary plus operator converts its operand into a number. If the operand is already a number, it remains unchanged.
+
 一元加号运算符将其操作数转换为数字。如果操作数已经是数字，则保持不变。
 
 const str = '42';
@@ -16,7 +18,9 @@ const strToNum = +str;
 console.log(strToNum); // 42
 console.log(typeof str); // string
 console.log(typeof strToNum); // number
+
 Unary plus is handy when you want to make sure you're working with a numeric value. As you might guess, there's a unary negation operator. It negates the value of the operand. It works similarly to the unary plus, except it flips the sign.
+
 当你想确保自己正在处理数值时，一元加号运算符会很有用。正如你可能猜到的，还有一个一元否定运算符。它否定操作数的值。它的工作方式与一元加号类似，只是它会改变符号。
 
 const str = '42';
@@ -25,7 +29,9 @@ const strToNegativeNum = -str;
 console.log(strToNegativeNum); // -42
 console.log(typeof str); // string
 console.log(typeof strToNegativeNum); // number
+
 The logical NOT operator, represented by an exclamation mark (!), is another unary operator. It flips the boolean value of its operand. So, if the operand is true, it becomes false, and if it's false, it becomes true. 
+
 逻辑非运算符，用感叹号（!）表示，是另一个一元运算符。它翻转其操作数的布尔值。所以，如果操作数是 true，它就变成 false，如果操作数是 false，它就变成 true。
 
 let isOnline = true;
@@ -33,6 +39,7 @@ console.log(!isOnline); // false
 
 let isOffline = false;
 console.log(!isOffline); // true
+
 The bitwise NOT operator is a less commonly used unary operator. Represented by a tilde, ~, it inverts the binary representation of a number. Computers store numbers in binary format (1s and 0s). The ~ operator flips every bit, meaning it changes all 1s to 0s and all 0s to 1s. You will learn more about binary and bits in a future lecture.
 位非运算符是一种不太常用的单目运算符。它用波浪号~表示，用于反转一个数的二进制表示。计算机以二进制格式（1 和 0）存储数字。~运算符翻转每一位，意味着将所有的 1 变为 0，所有的 0 变为 1。你将在未来的课程中了解更多关于二进制和位的内容。
 
