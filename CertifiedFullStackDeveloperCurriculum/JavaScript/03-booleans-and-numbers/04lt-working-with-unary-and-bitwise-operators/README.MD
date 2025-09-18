@@ -76,40 +76,53 @@ console.log(typeof value); // string
 ## What Are Bitwise Operators, and How Do They Work? 位运算符
 
 Bitwise operators in JavaScript are special operators that work on the binary representations of numbers. To understand bitwise operators, we first need to grasp the concept of bits and binary numbers. In computing, a bit is the most basic unit of information. It can have only two values: 0 or 1. Binary is a number system that uses only these two digits to represent all numbers.
+
 JavaScript 中的位运算符是作用于数字二进制表示的特殊运算符。要理解位运算符，我们首先需要掌握位和二进制数的概念。在计算机中，位是最基本的信息单位。它只有两个值： 0 或 1 。二进制是一种仅使用这两个数字来表示所有数字的数制。
 
 For example, the binary representation of the decimal number 10 is 1010. In this system, each digit represents a power of 2, starting from the rightmost digit and increasing as we move left.
+
 例如，十进制数 10 的二进制表示是 1010 。在这个系统中，每个数字代表 2 的幂，从最右边的数字开始，向左移动时幂次逐渐增加。
 
 1	0	1	0
 1 · 23	0 · 22	1 · 21	0 · 20
 8	0	2	0
+
 In the table above, the first row shows the binary number 1010, the second row shows the power of 2 represented by each binary position, and the third row shows the result of each multiplication. If you add all the values in the third row, they total 10.
+
 在上述表格中，第一行显示了二进制数 1010 ，第二行显示了每个二进制位的幂，第三行显示了每次乘法的结果。如果你将第三行的所有值相加，它们总共是 10 。
 
 Now, let's dive into bitwise operators. These operators perform operations on the binary representations of numbers. JavaScript provides several bitwise operators, including AND (&), OR (|), XOR (^), NOT (~), left shift (<<), and right shift (>>).
+
 现在，让我们深入了解位运算符。这些运算符对数字的二进制表示进行操作。JavaScript 提供了多种位运算符，包括与（ & ）、或（ | ）、异或（ ^ ）、非（ ~ ）、左移（ << ）和右移（ >> ）。
 
 The bitwise AND (&) operator returns a 1 in each bit position for which the corresponding bits of both operands are 1. Here's an example:
+
 位与（ & ）运算符在两个操作数的对应位都为 1 时，在每一位返回 1 。这里有一个例子：
 
 let a = 5;  // Binary: 101
 let b = 3;  // Binary: 011
 console.log(a & b);  // Output: 1 (Binary: 001)
+
 In this example, we perform a bitwise AND operation on 5 (101 in binary) and 3 (011 in binary). The result is 1 (001 in binary) because only the rightmost bit is 1 in both numbers.
+
 在这个例子中，我们对 5 （二进制为 101 ）和 3 （二进制为 011 ）进行位与运算。结果是 1 （二进制为 001 ），因为只有最右边的位在两个数中都是 1 。
 
 The bitwise OR (|) operator returns a 1 in each bit position for which the corresponding bits of either or both operands are 1. For example:
+
 位或（ | ）运算符在任意一个或两个操作数的对应位为 1 时，在每一位返回 1 。例如：
 
 let a = 5;  // Binary: 101
 let b = 3;  // Binary: 011
+
 console.log(a | b);  // Output: 7 (Binary: 111)
+
 Here, the result is 7 (111 in binary) because at least one of the bits is 1 in each position.
+
 这里，结果是 7 （二进制为 111 ），因为在每一位中至少有一个位是 1 。
 
 The bitwise XOR (^) operator returns a 1 in each bit position for which the corresponding bits of either, but not both, operands are 1. For instance:
-位运算符 XOR（ ^ ）在任一操作数的对应位不同但非同时为 1 时，在每一位位置返回 1 。例如：
+
+按位异或（ ^ ）在任一操作数的对应位不同但非同时为 1 时，在每一位位置返回 1 。例如：
 
 let a = 5;  // Binary: 101
 let b = 3;  // Binary: 011
