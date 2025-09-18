@@ -49,27 +49,32 @@ const num = 5; // The binary for 5 is 00000101
 console.log(~num); // -6
 
 In this example, 5 became -6 because by applying the ~ operator to 5, you get - (5 + 1), which equals -6 due to two's complement representation. Two's complement is a way computers represent negative numbers in binary. You probably won't use the bitwise NOT often unless you're working with low-level programming tasks like manipulating bits directly.
+
 在这个例子中，~将 0 变成了 1，因为将~运算符应用于 3，得到 4，由于二进制补码表示，4 等于 5。二进制补码是计算机在二进制中表示负数的一种方式。除非你正在处理像直接操作位这样的底层编程任务，否则你可能不会经常使用位非运算符。
 
 The void keyword is a unary operator that evaluates an expression and returns undefined.
-~关键字是一个单目运算符，用于计算表达式并返回其结果。
+
+void关键字是一个单目运算符，用于计算表达式并返回其结果。
 
 const result = void (2 + 2);
 
 console.log(result); // undefined
 void is also commonly used in hyperlinks to prevent navigation:
-~也常用于超链接中，以防止导航：
+
+void也常用于超链接中，以防止导航：
 
 <a href="javascript:void(0);">Click Me</a>
+
 Finally, there is the typeof operator which you learned about in previous lectures. This returns the type of its operand as a string.
+
 最后，还有你在之前的讲座中学到的 typeof 运算符，它返回其操作数的类型作为字符串。
 
 const value = 'Hello world';
 
 console.log(typeof value); // string
 
-## What Are Bitwise Operators, and How Do They Work?
-位运算符是什么，它们是如何工作的？
+## What Are Bitwise Operators, and How Do They Work? 位运算符
+
 Bitwise operators in JavaScript are special operators that work on the binary representations of numbers. To understand bitwise operators, we first need to grasp the concept of bits and binary numbers. In computing, a bit is the most basic unit of information. It can have only two values: 0 or 1. Binary is a number system that uses only these two digits to represent all numbers.
 JavaScript 中的位运算符是作用于数字二进制表示的特殊运算符。要理解位运算符，我们首先需要掌握位和二进制数的概念。在计算机中，位是最基本的信息单位。它只有两个值： 0 或 1 。二进制是一种仅使用这两个数字来表示所有数字的数制。
 
