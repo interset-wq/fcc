@@ -127,7 +127,9 @@ The bitwise XOR (^) operator returns a 1 in each bit position for which the corr
 let a = 5;  // Binary: 101
 let b = 3;  // Binary: 011
 console.log(a ^ b);  // Output: 6 (Binary: 110)
+
 The result is 6 (110 in binary) because the first and second bits from the right are different in the two numbers.
+
 结果是 6 （二进制为 110 ），因为两个数从右往左的第一位和第二位不同。
 
 The bitwise NOT (~) operator inverts all the bits of its operand. For example:
@@ -135,25 +137,34 @@ The bitwise NOT (~) operator inverts all the bits of its operand. For example:
 
 let a = 5;  // Binary: 101
 console.log(~a);  // Output: -6
+
 This might seem surprising, but it's because of how negative numbers are represented in binary using two's complement.
+
 这可能看起来很奇怪，但这是因为负数在二进制中使用二进制补码表示。
 
 The left shift (<<) operator shifts all bits to the left by a specified number of positions. For example:
+
 左移（ << ）运算符将所有位向左移动指定的位数。例如：
 
 let a = 5;  // Binary: 101
 console.log(a << 1);  // Output: 10 (Binary: 1010)
+
 Here, all bits are shifted one position to the left, effectively multiplying the number by 2.
+
 这里，所有位向左移动一位，相当于将数字乘以 2 。
 
 The right shift (>>) operator shifts all bits to the right. For example:
+
 右移（ >> ）运算符将所有位向右移动。例如：
 
 let a = 5;  // Binary: 101
 console.log(a >> 1);  // Output: 2 (Binary: 10)
+
 Here, all bits are shifted one position to the right, effectively dividing the number by 2 and rounding down.
+
 这里，所有位向右移动一位，相当于将数字除以 2 并向下取整。
 
 Bitwise operators are often used in low-level programming and cryptography. While they may not be as commonly used in everyday JavaScript programming, understanding them can be beneficial for certain specialized tasks and can deepen your understanding of how computers work at a fundamental level.
+
 位运算符通常用于低级编程和密码学。虽然它们在日常 JavaScript 编程中可能不如其他运算符常用，但理解它们对于某些特定任务是有益的，并且可以加深你对计算机基本工作原理的理解。
 
